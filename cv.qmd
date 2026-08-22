@@ -1,0 +1,9 @@
+---
+title: "CV"
+---
+
+[**Download the full CV (PDF)**](files/Bassler_CV.pdf){.btn .btn-outline-primary target="_blank"}
+
+Covers education, professional experience, grant support, teaching, service, honors and awards, and professional development in addition to the publications and talks listed on this site.
+
+<embed src="files/Bassler_CV.pdf" type="application/pdf" width="100%" height="900px" style="border: 1px solid #ddd; border-radius: 6px; margin-top: 1rem;">

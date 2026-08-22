@@ -1,0 +1,45 @@
+---
+title: ""
+page-layout: article
+---
+
+<!--
+  Optional headshot: drop a photo into files/headshot.jpg and uncomment
+  the line below to have it appear at the top-right of this page.
+  <img src="files/headshot.jpg" class="headshot" alt="John R. Bassler">
+-->
+
+::: {.hero}
+# John R. Bassler, DrPH, MS
+<span class="subtitle">Clinical Database Manager II</span>
+<span class="affiliation">University of Alabama at Birmingham · Center for AIDS Research (CFAR)</span>
+
+<div class="hero-links">
+[GitHub](https://github.com/JRBassler){target="_blank"} ·
+[Google Scholar](https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en){target="_blank"} ·
+[LinkedIn](https://www.linkedin.com/in/john-bassler-drph/){target="_blank"} ·
+[PubMed Bibliography](https://www.ncbi.nlm.nih.gov/myncbi/john.bassler.2/bibliography/public/){target="_blank"} ·
+[CV](cv.qmd) ·
+[johnrbassler\@gmail.com](mailto:johnrbassler@gmail.com)
+</div>
+:::
+
+As an experienced statistician, I've honed my skills in higher education, contributing to research and analytical initiatives. I apply advanced spatial and survival statistical methods to public health challenges, with a focus on HIV care outcomes across Alabama and the Deep South.
+
+I currently serve as Clinical Database Manager II with the UAB Center for AIDS Research (CFAR), and I am completing my Doctor of Public Health (DrPH) in Biostatistics at UAB, with a dissertation on shared frailty models for spatial data applied to time to HIV viral suppression. My work sits at the intersection of survival analysis, spatial and Bayesian statistical methods, and structural determinants of HIV care outcomes — including a [study on historical redlining and delays in HIV treatment](https://doi.org/10.1001/jamainternmed.2024.5003) that has been covered in the [national press](press.qmd).
+
+## Research interests
+
+Time-to-event / survival analysis · Frailty models · Spatial and Bayesian spatial modeling · HIV/AIDS and infectious disease · Environmental health · Structural determinants of health
+
+## Education
+
+**Doctor of Public Health (DrPH), Biostatistics** — University of Alabama at Birmingham *(expected December 2026)*
+Dissertation: *Shared Frailty Models for Spatial Data, with Application to Time to HIV Viral Suppression*
+Committee Chair: Dr. Jeff M. Szychowski
+
+**Master of Science (MS), Biostatistics** — West Virginia University, 2017
+
+**Bachelor of Science (BSc), Mathematics; BSc, Industrial Mathematics and Statistics** — West Virginia University, 2013
+
+See the full [CV](cv.qmd) for professional experience, grant support, teaching, service, and honors.

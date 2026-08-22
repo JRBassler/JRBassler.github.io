@@ -1,0 +1,44 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "John R. Bassler, DrPH, MS"
+  description: "Clinical Database Manager II, UAB Center for AIDS Research. Spatial and survival statistical methods for HIV care outcomes in Alabama and the Deep South."
+  site-url: "https://jrbassler.github.io"
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: publications.qmd
+        text: Publications
+      - href: talks.qmd
+        text: Talks
+      - href: press.qmd
+        text: Press
+      - href: cv.qmd
+        text: CV
+    right:
+      - icon: github
+        href: https://github.com/JRBassler
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/john-bassler-drph/
+        aria-label: LinkedIn
+      - icon: envelope
+        href: mailto:johnrbassler@gmail.com
+        aria-label: Email
+  page-footer:
+    left: "© 2026 John R. Bassler"
+    center: "[Google Scholar](https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en) · [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/john.bassler.2/bibliography/public/) · [GitHub](https://github.com/JRBassler)"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    grid:
+      body-width: 850px
+    link-external-newwindow: true
