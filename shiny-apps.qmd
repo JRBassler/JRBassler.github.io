@@ -5,9 +5,7 @@ title: "Shiny Apps and Dashboards"
 Selected and publicly available R Shiny applications and related dashboards used to support various projects and research initiatives.
 
 <!--
-  Each entry below is one .app-entry card: a thumbnail image, a short
-  description, a primary link to the live app, and (when one exists) a
-  secondary link to the OSF repository.
+Each entry below is one .app-entry card: a thumbnail image, a short description, a primary link to the live app, and (when one exists) a secondary link to the OSF repository.
 -->
 
 ::: {.app-entry}
@@ -16,7 +14,27 @@ Selected and publicly available R Shiny applications and related dashboards used
 <div class="app-text">
 **SPatial Analysis Rendering Tool for Outcomes-based research (SPARTO)** — Shiny App to quickly build choropleth maps from User provided data. This application supports any spatially-referenced output that the User wishes to visualize in a choropleth.
 
-<div class="app-links">[Open Shiny App](https://jbassler.shinyapps.io/SPARTO-Choropleths/) · [OSF Repository](https://doi.org/10.17605/OSF.IO/4H5WY){target="_blank"}</div>
+<div class="app-links">[Open Shiny App](https://jbassler.shinyapps.io/UAB-RTZ-app/) · [OSF Repository](https://doi.org/10.17605/OSF.IO/QZG94){target="_blank"}</div>
+</div>
+:::
+
+::: {.app-entry}
+<img src="files/rtz-shiny.png" alt="Screenshot of the Map Supplement: Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South - A Roadmap to Accelerated Treatment Initiation shiny app" class="app-thumb">
+
+<div class="app-text">
+**Map Supplement: Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South - A Roadmap to Accelerated Treatment Initiation** — Shiny App illustrating geographic differences in median time to HIV viral suppression (viral load < 200 copies/mL blood) from HIV diagnosis, in days, in Louisiana, Mississippi, and Alabama.
+
+<div class="app-links">[Open Shiny App](https://jbassler.shinyapps.io/UAB-RTZ-app/) · [OSF Repository](https://doi.org/10.17605/OSF.IO/4H5WY){target="_blank"}</div>
+</div>
+:::
+
+::: {.app-entry}
+<img src="files/rtz-shiny.png" alt="Screenshot of the Harm Reduction in Southern Communities shiny app" class="app-thumb">
+
+<div class="app-text">
+**Harm Reduction in Southern Communities** — Shiny App depicting county-level choropleths of opiod/substance use data, including overdose deaths, overdose-related ER visits, and overdose-related EMS visits.
+
+<div class="charm-links">[Open Shiny App](https://jbassler.shinyapps.io/UAB-Southern-HR/) · [OSF Repository](https://doi.org/10.17605/OSF.IO/NBF43){target="_blank"}</div>
 </div>
 :::
 
