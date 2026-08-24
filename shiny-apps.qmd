@@ -7,9 +7,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 <!--
   Each entry below is one .app-entry card: a thumbnail image, a short
   description, a primary link to the live app, and (when one exists) a
-  secondary link to the OSF repository. To add a new one, copy a whole
-  block (from ::: {.app-entry} to the closing :::) and edit its three
-  parts: the img src, the description text, and the two links.
+  secondary link to the OSF repository.
 -->
 
 ::: {.app-entry}
@@ -19,55 +17,5 @@ Selected and publicly available R Shiny applications and related dashboards used
 **Epidemic Preparedness and Vaccine Equity: Access for All** — map supplement exploring vaccine access and epidemic preparedness.
 
 <div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
-</div>
-:::
-
-::: {.app-entry}
-<img src="files/app-placeholder.png" alt="Screenshot of the Geographic Variability in Time from HIV Diagnosis to Viral Suppression map supplement" class="app-thumb">
-
-<div class="app-text">
-**Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South** — map supplement to the geospatial analysis of HIV testing coverage across the Southeast.
-
-<div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/QZG94){target="_blank"}</div>
-</div>
-:::
-
-::: {.app-entry}
-<img src="files/app-placeholder.png" alt="Screenshot of the Comprehensive Harm Reduction and Medicine (CHRM) in Alabama map supplement" class="app-thumb">
-
-<div class="app-text">
-**Comprehensive Harm Reduction and Medicine (CHRM) in Alabama** — map supplement on harm reduction resource access in Alabama.
-
-<div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/5GDA4){target="_blank"}</div>
-</div>
-:::
-
-::: {.app-entry}
-<img src="files/app-placeholder.png" alt="Screenshot of the Redlining and Time to Viral Suppression map supplement" class="app-thumb">
-
-<div class="app-text">
-**Redlining and Time to Viral Suppression Among Persons With HIV** — map supplement to the *JAMA Internal Medicine* redlining study (see [Publications](publications.qmd) and [Press](press.qmd)).
-
-<div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/YJKUN){target="_blank"}</div>
-</div>
-:::
-
-::: {.app-entry}
-<img src="files/app-financial-exclusion.png" alt="Screenshot of the Neighborhood-Level Financial Exclusion and Cancer Screening Disparities dashboard" class="app-thumb">
-
-<div class="app-text">
-**Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022** — web-based dashboard depicting choropleths illustrating the temporal and geographic variability of home loan denial rates and cancer screening rates (colorectal, breast, and cervical) by U.S. census tract.
-
-<div class="app-links">[Open app](https://arcg.is/1bnK4K){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/WC598){target="_blank"}</div>
-</div>
-:::
-
-::: {.app-entry}
-<img src="files/app-placeholder.png" alt="Screenshot of the SPARTO-Choropleths dashboard" class="app-thumb">
-
-<div class="app-text">
-**SPARTO-Choropleths** — open-access dashboard for geographic visualization of HIV care continuum outcomes.
-
-<div class="app-links">[Open app](#){.app-link-pending}</div>
 </div>
 :::
