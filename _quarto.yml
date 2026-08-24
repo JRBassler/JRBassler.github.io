@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "John R. Bassler, DrPH, MS"
+  title: "John R. Bassler"
   description: "Clinical Database Manager II, UAB Center for AIDS Research. Spatial and survival statistical methods for HIV care outcomes in Alabama and the Deep South."
   site-url: "https://jrbassler.github.io"
   navbar:
