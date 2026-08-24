@@ -139,3 +139,52 @@ a:hover {
 .in-prep {
   color: #888;
 }
+ 
+/* Shiny Apps & Dashboards cards */
+.app-entry {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+ 
+.app-entry:last-child {
+  border-bottom: none;
+}
+ 
+.app-thumb {
+  width: 200px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  flex-shrink: 0;
+}
+ 
+.app-text {
+  flex: 1;
+}
+ 
+.app-links {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+ 
+.app-link-pending {
+  color: #aaa;
+  pointer-events: none;
+  cursor: default;
+}
+ 
+@media (max-width: 600px) {
+  .app-entry {
+    flex-direction: column;
+  }
+  .app-thumb {
+    width: 100%;
+    max-width: 280px;
+  }
+}
