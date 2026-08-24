@@ -1,4 +1,4 @@
-/* ---- Minimal academic theme, inspired by clean faculty-page layouts ---- */
+/* Minimal academic theme */
 
 body {
   font-family: "Georgia", "Iowan Old Style", serif;
@@ -31,12 +31,28 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Full-width banner above the name on the homepage */
+.banner-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.75rem;
+}
+
 /* Hero / about block on the homepage */
 .hero {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text {
+  display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  margin-bottom: 1.5rem;
 }
 
 .hero .subtitle {
@@ -62,10 +78,19 @@ a:hover {
 }
 
 .headshot {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
   border-radius: 8px;
-  max-width: 220px;
-  float: right;
-  margin: 0 0 1rem 1.5rem;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* Publication / talk list entries */
@@ -100,8 +125,3 @@ a:hover {
   font-size: 0.9rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
-}
-
-.in-prep {
-  color: #888;
-}
