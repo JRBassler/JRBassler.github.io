@@ -16,9 +16,6 @@ page-layout: article
 <div class="affiliation">University of Alabama at Birmingham · Center for AIDS Research (CFAR)</div>
 :::
  
-<img src="files/fun-photo.jpg" class="headshot" alt="John Bassler with his German Shepherd, Sparto">
-:::
- 
 ## About
 
 As an experienced statistician, I've honed my skills in higher education, contributing to research and analytical initiatives. I seek to apply advanced spatial and survival statistical methods to public health challenges, with a focus on HIV and Oncology outcomes across Alabama and the Deep South.
