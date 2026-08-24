@@ -2,22 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jrbassler.github.io/press.html</loc>
-    <lastmod>2026-08-24T14:08:32.274Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jrbassler.github.io/index.html</loc>
-    <lastmod>2026-08-24T14:08:32.274Z</lastmod>
-  </url>
-  <url>
-    <loc>https://jrbassler.github.io/talks.html</loc>
-    <lastmod>2026-08-24T14:08:32.274Z</lastmod>
+    <lastmod>2026-08-24T14:08:56.015Z</lastmod>
   </url>
   <url>
     <loc>https://jrbassler.github.io/cv.html</loc>
-    <lastmod>2026-08-24T14:08:32.272Z</lastmod>
+    <lastmod>2026-08-24T14:08:56.013Z</lastmod>
   </url>
   <url>
-    <loc>https://jrbassler.github.io/publications.html</loc>
-    <lastmod>2026-08-24T14:08:32.274Z</lastmod>
+    <loc>https://jrbassler.github.io/talks.html</loc>
+    <lastmod>2026-08-24T14:08:56.015Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jrbassler.github.io/index.html</loc>
+    <lastmod>2026-08-24T14:08:56.015Z</lastmod>
   </url>
 </urlset>
