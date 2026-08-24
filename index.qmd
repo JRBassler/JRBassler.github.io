@@ -15,7 +15,7 @@ page-layout: article
  
 <div class="affiliation">University of Alabama at Birmingham · Center for AIDS Research (CFAR)</div>
 :::
-  
+ 
 ::: {.about-section}
 ## About
 
