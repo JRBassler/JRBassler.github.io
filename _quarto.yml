@@ -14,12 +14,15 @@ website:
       - href: publications.qmd
         text: Publications
       - href: talks.qmd
-        text: Talks
+        text: Presentations
       - href: press.qmd
         text: Press
       - href: cv.qmd
         text: CV
     right:
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en
+        aria-label: Google Scholar
       - icon: github
         href: https://github.com/JRBassler
         aria-label: GitHub
