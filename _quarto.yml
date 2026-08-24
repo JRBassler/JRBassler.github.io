@@ -15,6 +15,8 @@ website:
         text: Publications
       - href: talks.qmd
         text: Presentations
+      - href: shiny-apps.qmd
+        text: Shiny Apps
       - href: press.qmd
         text: Press
       - href: cv.qmd
@@ -36,7 +38,7 @@ website:
     left: "© 2026 John R. Bassler"
     center: "[Google Scholar](https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en) · [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/john.bassler.2/bibliography/public/) · [GitHub](https://github.com/JRBassler)"
     right: "Built with [Quarto](https://quarto.org)"
-
+ 
 format:
   html:
     theme: cosmo
@@ -45,3 +47,4 @@ format:
     grid:
       body-width: 850px
     link-external-newwindow: true
+ 
