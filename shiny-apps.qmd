@@ -11,11 +11,11 @@ Selected and publicly available R Shiny applications and related dashboards used
 -->
 
 ::: {.app-entry}
-<img src="files/app-financial-exclusion.png" alt="Screenshot of the Epidemic Preparedness and Vaccine Equity map supplement" class="app-thumb">
+<img src="files/app-financial-exclusion.png" alt="Screenshot of the Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022" class="app-thumb">
 
 <div class="app-text">
-**Epidemic Preparedness and Vaccine Equity: Access for All** — map supplement exploring vaccine access and epidemic preparedness.
+**Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022** — Web-based Dashboard depicting choropleths illustrating the temporal and geographic variability of home loan denial rates and cancer screening rates (Colorectal, Breast, and Cervical) by US census tract.
 
-<div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
+<div class="app-links">[Open app](https://doi.org/10.17605/OSF.IO/26EJC) · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
 </div>
 :::
