@@ -42,4 +42,3 @@ Committee Members: Dr. Dustin M. Long, Dr. Emily Levitan, Dr. Aadia Rana, Dr. D.
 *Minor: Communication Studies*
 
 See the full [CV](cv.qmd) for professional experience, grant support, teaching, service, and honors.
-}
