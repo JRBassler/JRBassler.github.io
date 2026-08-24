@@ -41,7 +41,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 :::
 
 ::: {.app-entry}
-<img src="files/DG-shiny.png" alt="Screenshot of the Map Supplement: Redlining and Time to Viral Suppression Among Persons With HIV shiny app" class="app-thumb">
+<img src="files/nola-redline-shiny.png" alt="Screenshot of the Map Supplement: Redlining and Time to Viral Suppression Among Persons With HIV shiny app" class="app-thumb">
 
 <div class="app-text">
 **Map Supplement: Redlining and Time to Viral Suppression Among Persons With HIV** — Shiny App accompanying a study examining the relationship between historical redlining (1930s-era HOLC residential security grades) and time to viral suppression among persons with HIV in New Orleans, Louisiana. The full manuscript is available [HERE](https://pmc.ncbi.nlm.nih.gov/articles/PMC11536221/).
