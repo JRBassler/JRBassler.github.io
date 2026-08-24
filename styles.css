@@ -157,7 +157,7 @@ a:hover {
  
 .app-thumb {
   width: 200px;
-  height: auto;
+  height: 140px;
   border-radius: 6px;
   border: 1px solid #ddd;
   flex-shrink: 0;
