@@ -6,7 +6,7 @@ Full bibliography also maintained on [PubMed](https://www.ncbi.nlm.nih.gov/myncb
 
 ## Peer-reviewed journal articles
 
-<div class="section-note">Citation counts below are fetched live each time this page loads, matched by DOI — primarily from <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>, falling back to <a href="https://www.crossref.org" target="_blank">Crossref</a> when Semantic Scholar's public API is unavailable. Both undercount relative to Google Scholar (which also counts preprints, theses, and other sources); treat these as directional, not exhaustive. Click a count to see its source. If a count doesn't load, refresh the page — the lookup runs client-side and can occasionally be rate-limited.</div>
+<div class="section-note">Citation counts below are fetched live each time this page loads, matched by DOI — primarily from <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>, falling back to <a href="https://www.crossref.org" target="_blank">Crossref</a> when Semantic Scholar's public API is unavailable. Both undercount relative to Google Scholar (which also counts preprints, theses, and other sources); treat these as directional, not exhaustive. Click a count to see its source. <strong>If a count doesn't load, refresh the page</strong> — the lookup runs client-side and can occasionally be rate-limited.</div>
 
 ::: {.pub-entry .citable}
 Kay ES, **Bassler JR**, Bamford L, Browne L, Burkholder G, Christopoulos K, Crane H, Gripshover B, Mayer KH, Moore RD, Willig A, Mugavero M, Giordano T. Retention in HIV Care Still Matters: A Longitudinal Multisite Analysis. J Acquir Immune Defic Syndr. 100(2):p 123-130, October 1, 2025.
