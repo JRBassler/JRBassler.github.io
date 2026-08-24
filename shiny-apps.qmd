@@ -11,7 +11,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 -->
 
 ::: {.app-entry}
-<img src="files/app-placeholder.png" alt="Screenshot of the Epidemic Preparedness and Vaccine Equity map supplement" class="app-thumb">
+<img src="files/app-financial-exclusion.png" alt="Screenshot of the Epidemic Preparedness and Vaccine Equity map supplement" class="app-thumb">
 
 <div class="app-text">
 **Epidemic Preparedness and Vaccine Equity: Access for All** — map supplement exploring vaccine access and epidemic preparedness.
