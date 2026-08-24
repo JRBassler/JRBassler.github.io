@@ -2,18 +2,19 @@
 title: ""
 page-layout: article
 ---
- 
+
 <img src="files/banner.png" class="banner-img" alt="">
- 
+
 ::: {.hero}
 <img src="files/headshot.jpg" class="headshot" alt="John R. Bassler">
- 
+
 ::: {.hero-text}
 # John R. Bassler, DrPH, MS
- 
+
 <div class="subtitle">Clinical Database Manager II</div>
- 
+
 <div class="affiliation">University of Alabama at Birmingham · Center for AIDS Research (CFAR)</div>
+:::
 :::
  
 ::: {.about-section}
