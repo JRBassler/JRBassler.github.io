@@ -2,6 +2,8 @@
 title: "Selected Press"
 ---
 
+## Academic
+
 Media coverage of a 2024 *JAMA Internal Medicine* study on historical redlining and delays in HIV treatment, co-authored with colleagues at UAB CFAR (see the [original article](https://doi.org/10.1001/jamainternmed.2024.5003){target="_blank"} on the [Publications](publications.qmd) page).
 
 ::: {.talk-entry}
