@@ -179,33 +179,69 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Courses taught, guest lectures, and teaching-related service. Listed newest first.</p>
+<p>Courses taught, guest lectures, and teaching assistantships. Organized by role, institution/department, and semester.</p>
 <section id="teaching-experience" class="level2">
 <h2 class="anchored" data-anchor-id="teaching-experience">Teaching Experience</h2>
 <!--
   Each entry below is a .talk-entry card, same style used on the
-  Presentations page. A typical entry looks like:
-
+  Presentations page, grouped under ### role headings. A typical
+  entry looks like:
+ 
   ::: {.talk-entry}
-  **Course Title** — Role (e.g. Instructor of Record, Co-Instructor,
-  Teaching Assistant, Guest Lecturer). Institution, Department. Term
-  (e.g. Fall 2025).
-
-  Optional 1-2 sentence description of the course or your role.
-
-  <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
+  **Institution Name**, Department
+ 
+  Graduate: *Course Title* — Term
+  Undergraduate: *Course Title* — Term
   :::
-
-  Materials (syllabi, slide decks, etc.) go in files/teaching/, using
-  the same {download=""} / {target="_blank"} link conventions as the
-  Presentations page. Leave off the <div class="talk-links">...</div>
-  line entirely for entries with no materials to share.
+ 
+  (Note the two trailing spaces at the end of each course line above
+  before the line break — that's a Markdown hard break, needed so
+  multiple courses at the same institution each land on their own
+  line instead of running together.)
+ 
+  To attach materials (a syllabus, slides, etc.) to an entry, add a
+  line right after the course list, before the closing ":::" — same
+  {download=""} / {target="_blank"} conventions as the Presentations
+  page:
+ 
+  <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
+ 
+  Materials go in files/teaching/.
 -->
+<section id="adjunct-instructor-course-designer" class="level3">
+<h3 class="anchored" data-anchor-id="adjunct-instructor-course-designer">Adjunct Instructor &amp; Course Designer</h3>
 <div class="talk-entry">
-<p><span class="materials-pending">Teaching entries coming soon.</span></p>
+<p><strong>Spring Hill College</strong>, Division of Nursing</p>
+<p>Graduate: <em>Foundations in Biostatistics</em> — Spring 2024</p>
+</div>
+</section>
+<section id="guest-lecturer" class="level3">
+<h3 class="anchored" data-anchor-id="guest-lecturer">Guest Lecturer</h3>
+<div class="talk-entry">
+<p><strong>University of Alabama at Birmingham</strong>, Department of Biostatistics</p>
+<p>Graduate: <em>Estimation and Inference</em> — Fall 2020<br>
+Undergraduate: <em>Biostatistics Honors</em> — Fall 2019</p>
+</div>
+<div class="talk-entry">
+<p><strong>University of Alabama at Birmingham</strong>, Department of Epidemiology</p>
+<p>Graduate: <em>Analysis of Follow-Up Studies</em> — Summer 2024</p>
+</div>
+</section>
+<section id="teaching-assistant" class="level3">
+<h3 class="anchored" data-anchor-id="teaching-assistant">Teaching Assistant</h3>
+<div class="talk-entry">
+<p><strong>University of Alabama at Birmingham</strong>, Department of Biostatistics</p>
+<p>Graduate: <em>Statistical Methods I</em> — Fall 2023<br>
+Graduate: <em>SAS Data Management and Reporting with SAS</em> — Fall 2019</p>
+</div>
+<div class="talk-entry">
+<p><strong>West Virginia University</strong>, Department of Biostatistics</p>
+<p>Graduate: <em>Categorical Data Analysis</em> — Spring 2017<br>
+Graduate: <em>Data Management and Reporting</em> — Fall 2016</p>
 </div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
