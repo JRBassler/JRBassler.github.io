@@ -27,15 +27,17 @@ Santoro C. The Health-Related Consequences of Redlining. AJMC. Published October
 ::: {.app-text}
 UAB News. Pet's Love and Affection Promotes Health and Healing. [Read the article](https://digitalcommons.library.uab.edu/cgi/viewcontent.cgi?article=16253&context=all-news){target="_blank"}
 :::
-  
-::: {.talk-entry}
-Hand in Paw. Gentle Giant: A Volunteer Spotlight. Published July 7, 2020. [handinpaw.org/2020/07/07/gentle-giant-a-volunteer-spotlight](https://handinpaw.org/2020/07/07/gentle-giant-a-volunteer-spotlight/){target="_blank"}
+ 
 :::
  
 ::: {.talk-entry}
-Hand in Paw. Introducing the Hand in Paw Little Library, our newest reading initiative. [View post](https://www.facebook.com/handinpawal/posts/introducing-the-hand-in-paw-little-library-our-newest-reading-initiative-the-lit/431042812386426/){target="_blank"}
+Hansen M. Gentle Giant: A Volunteer Spotlight. Hand in Paw. Published July 7, 2020. [handinpaw.org/2020/07/07/gentle-giant-a-volunteer-spotlight](https://handinpaw.org/2020/07/07/gentle-giant-a-volunteer-spotlight/){target="_blank"}
 :::
  
 ::: {.talk-entry}
-Mississippi State University College of Veterinary Medicine. #WhyMSUCVM — because our patients and clients become a part of our family; meet Sparto. [View post](https://www.facebook.com/msstatevetmed/posts/whymsucvm-because-our-patients-and-clients-become-a-part-of-our-family-meet-spar/792265389608630/){target="_blank"}
+Hand in Paw (Facebook). Introducing the Hand in Paw Little Library, our newest reading initiative. [View post](https://www.facebook.com/handinpawal/posts/introducing-the-hand-in-paw-little-library-our-newest-reading-initiative-the-lit/431042812386426/){target="_blank"}
+:::
+ 
+::: {.talk-entry}
+Mississippi State University College of Veterinary Medicine (Facebook). #WhyMSUCVM — because our patients and clients become a part of our family; meet Sparto. [View post](https://www.facebook.com/msstatevetmed/posts/whymsucvm-because-our-patients-and-clients-become-a-part-of-our-family-meet-spar/792265389608630/){target="_blank"}
 :::
