@@ -1,0 +1,31 @@
+---
+title: "Teaching"
+---
+
+Courses taught, guest lectures, and teaching-related service. Listed newest first.
+
+## Teaching Experience
+
+<!--
+  Each entry below is a .talk-entry card, same style used on the
+  Presentations page. A typical entry looks like:
+
+  ::: {.talk-entry}
+  **Course Title** — Role (e.g. Instructor of Record, Co-Instructor,
+  Teaching Assistant, Guest Lecturer). Institution, Department. Term
+  (e.g. Fall 2025).
+
+  Optional 1-2 sentence description of the course or your role.
+
+  <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
+  :::
+
+  Materials (syllabi, slide decks, etc.) go in files/teaching/, using
+  the same {download=""} / {target="_blank"} link conventions as the
+  Presentations page. Leave off the <div class="talk-links">...</div>
+  line entirely for entries with no materials to share.
+-->
+
+::: {.talk-entry}
+<span class="materials-pending">Teaching entries coming soon.</span>
+:::
