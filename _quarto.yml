@@ -2,6 +2,7 @@ project:
   type: website
   output-dir: _site
 
+
 website:
   title: "John R. Bassler"
   description: "Clinical Database Manager II, UAB Center for AIDS Research. Spatial and survival statistical methods for HIV care outcomes in Alabama and the Deep South."
@@ -15,6 +16,8 @@ website:
         text: Publications
       - href: talks.qmd
         text: Presentations
+      - href: teaching.qmd
+        text: Teaching
       - href: shiny-apps.qmd
         text: Shiny Apps
       - href: press.qmd
@@ -47,4 +50,3 @@ format:
     grid:
       body-width: 850px
     link-external-newwindow: true
- 
