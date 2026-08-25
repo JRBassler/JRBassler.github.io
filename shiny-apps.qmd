@@ -29,12 +29,12 @@ Each entry below is one .app-entry card: a thumbnail image, a short description,
 :::
 
 ::: {.app-entry}
-<img src="files/rtz-shiny.png" alt="Screenshot of the Harm Reduction in Southern Communities shiny app" class="app-thumb">
+<img src="files/charm-shiny.png" alt="Screenshot of the Harm Reduction in Southern Communities shiny app" class="app-thumb">
 
 <div class="app-text">
 **Harm Reduction in Southern Communities** — Shiny App depicting county-level choropleths of opiod/substance use data, including overdose deaths, overdose-related ER visits, and overdose-related EMS visits.
 
-<div class="charm-links">[Open Shiny App](https://jbassler.shinyapps.io/UAB-Southern-HR/) · [OSF Repository](https://doi.org/10.17605/OSF.IO/NBF43){target="_blank"}</div>
+<div class="app-links">[Open Shiny App](https://jbassler.shinyapps.io/UAB-Southern-HR/) · [OSF Repository](https://doi.org/10.17605/OSF.IO/NBF43){target="_blank"}</div>
 </div>
 :::
 
