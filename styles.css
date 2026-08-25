@@ -94,14 +94,33 @@ a:hover {
 }
  
 /* "About" section watermark/background image */
+
 .about-section {
   position: relative;
+  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+ 
+.about-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url('files/about-watermark.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 1.5rem 1.5rem 1.75rem 1.5rem;
-  border-radius: 8px;
+  /* Tune the watermark's strength here: lower opacity = lighter/fainter,
+     filter brightness > 1 washes it out further without just fading to
+     transparent. Adjust these two values to taste. */
+  opacity: 0.55;
+  filter: brightness(1.15);
+  z-index: 0;
+}
+ 
+.about-section > * {
+  position: relative;
+  z-index: 1;
 }
  
 /* Publication / talk list entries */
