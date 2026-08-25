@@ -2,30 +2,72 @@
 title: "Teaching"
 ---
 
-Courses taught, guest lectures, and teaching-related service. Listed newest first.
-
+Courses taught, guest lectures, and teaching assistantships. Organized by role, institution/department, and semester.
+ 
 ## Teaching Experience
-
+ 
 <!--
   Each entry below is a .talk-entry card, same style used on the
-  Presentations page. A typical entry looks like:
-
+  Presentations page, grouped under ### role headings. A typical
+  entry looks like:
+ 
   ::: {.talk-entry}
-  **Course Title** — Role (e.g. Instructor of Record, Co-Instructor,
-  Teaching Assistant, Guest Lecturer). Institution, Department. Term
-  (e.g. Fall 2025).
-
-  Optional 1-2 sentence description of the course or your role.
-
-  <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
+  **Institution Name**, Department
+ 
+  Graduate: *Course Title* — Term
+  Undergraduate: *Course Title* — Term
   :::
-
-  Materials (syllabi, slide decks, etc.) go in files/teaching/, using
-  the same {download=""} / {target="_blank"} link conventions as the
-  Presentations page. Leave off the <div class="talk-links">...</div>
-  line entirely for entries with no materials to share.
+ 
+  (Note the two trailing spaces at the end of each course line above
+  before the line break — that's a Markdown hard break, needed so
+  multiple courses at the same institution each land on their own
+  line instead of running together.)
+ 
+  To attach materials (a syllabus, slides, etc.) to an entry, add a
+  line right after the course list, before the closing ":::" — same
+  {download=""} / {target="_blank"} conventions as the Presentations
+  page:
+ 
+  <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
+ 
+  Materials go in files/teaching/.
 -->
-
+ 
+### Adjunct Instructor & Course Designer
+ 
 ::: {.talk-entry}
-<span class="materials-pending">Teaching entries coming soon.</span>
+**Spring Hill College**, Division of Nursing
+ 
+Graduate: *Foundations in Biostatistics* — Spring 2024
+:::
+ 
+### Guest Lecturer
+ 
+::: {.talk-entry}
+**University of Alabama at Birmingham**, Department of Biostatistics
+ 
+Graduate: *Estimation and Inference* — Fall 2020  
+Undergraduate: *Biostatistics Honors* — Fall 2019
+:::
+ 
+::: {.talk-entry}
+**University of Alabama at Birmingham**, Department of Epidemiology
+ 
+Graduate: *Analysis of Follow-Up Studies* — Summer 2024
+:::
+ 
+### Teaching Assistant
+ 
+::: {.talk-entry}
+**University of Alabama at Birmingham**, Department of Biostatistics
+ 
+Graduate: *Statistical Methods I* — Fall 2023  
+Graduate: *SAS Data Management and Reporting with SAS* — Fall 2019
+:::
+ 
+::: {.talk-entry}
+**West Virginia University**, Department of Biostatistics
+ 
+Graduate: *Categorical Data Analysis* — Spring 2017  
+Graduate: *Data Management and Reporting* — Fall 2016
 :::
