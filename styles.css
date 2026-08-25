@@ -1,8 +1,9 @@
-/* Base page typography */
+
+/* ---- Base page typography ---- */
 body {
   /* System font stack: uses whatever clean sans-serif font is native
      to the visitor's OS (San Francisco on Mac, Segoe UI on Windows,
-     etc.) */
+     etc.) instead of loading a custom web font. Fast and modern. */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   line-height: 1.7;       /* generous line spacing for readability */
   color: #2c2c2c;         /* soft black body text, not pure #000 */
@@ -10,7 +11,7 @@ body {
                                  white cards below have something to
                                  visually sit on top of */
 }
- 
+
 /* Make sure the navbar and all headings use the same sans-serif
    stack as the body, rather than whatever default the "cosmo" Quarto
    theme ships with. Keeps typography consistent site-wide. */
@@ -20,7 +21,7 @@ h1, h2, h3, h4, h5, h6,
 .nav-link {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
- 
+
 .navbar {
   background-color: #ffffff !important; /* force white nav bar even
                                             though the page body is
@@ -31,53 +32,78 @@ h1, h2, h3, h4, h5, h6,
                                               from the page below,
                                               instead of a hard border */
 }
- 
+
 .navbar-title {
-  font-weight: 700; /* bold site name ("John R. Bassler") in the nav bar */
+  font-weight: 700; /* bold site name ("John R. Bassler") in the nav */
 }
- 
-/* Page title and the big name heading in the homepage hero get the same 
-bold, tightened look. */
+
+/* Page title (used when a .qmd sets a `title:`) and the big name
+   heading in the homepage hero get the same bold, tightened look. */
 h1.title, .hero h1 {
   font-weight: 700;
   letter-spacing: -0.015em; /* slightly tighter letter spacing reads
                                 as more "designed" at large sizes */
 }
- 
-/* All ## (h2) section headings site-wide: bold, no underline */
+
+/* All ## (h2) section headings site-wide: bold, no underline.
+   Quarto's default theme draws a full-width horizontal rule under
+   every h2 — the `border-bottom: none !important` here turns that
+   off since it clashed with the card-based look (cards already have
+   their own visual separation via shadow + white background). */
 h2 {
   font-weight: 700;
   font-size: 1.3rem;
   border-bottom: none !important;
   padding-bottom: 0 !important;
-  margin-top: 2.25rem;   /* room above each new section */
+  margin-top: 2.25rem;   /* breathing room above each new section */
   margin-bottom: 1rem;
 }
- 
-/* Links: deep red accent color instead of the theme's default
-   blue, used everywhere. Underline only appears on hover, not 
-   by default */
+
+/* ### (h3) sub-section headings — used to group cards within a
+   section, e.g. the "Adjunct Instructor", "Guest Lecturer", "Teaching
+   Assistant" role groupings on the Teaching page. Smaller and lighter
+   than h2 so the hierarchy (h2 section > h3 group > card) stays
+   visually clear. */
+h3 {
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  margin-top: 1.75rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Links: deep maroon accent color instead of the theme's default
+   blue, used everywhere (nav icons excluded — those are SVG icons,
+   not text links). Underline only appears on hover, not by default,
+   for a cleaner look. */
 a {
-  color: #7a1f2b; /* deep red accent */
+  color: #7a1f2b; /* deep maroon accent, understated */
   text-decoration: none;
 }
- 
+
 a:hover {
   text-decoration: underline;
 }
- 
-/* Buttons (e.g. the CV download button) pick up the same accent. */
+
+/* Buttons (e.g. the CV download button) pick up the same accent.
+   Quarto/Bootstrap's default .btn-outline-primary is blue; these
+   rules override it to match the maroon brand color, both at rest
+   and when hovered (hover state inverts to a solid maroon fill). */
 .btn-outline-primary {
   color: #7a1f2b !important;
   border-color: #7a1f2b !important;
 }
- 
+
 .btn-outline-primary:hover {
   background-color: #7a1f2b !important;
   border-color: #7a1f2b !important;
   color: #ffffff !important;
 }
- 
+
 /* Full-width banner above the name on the homepage */
 .banner-img {
   display: block;
@@ -89,8 +115,8 @@ a:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);  /* soft drop shadow so it
                                                 reads as a "panel" too */
 }
- 
-/*  Hero / about block on the homepage 
+
+/* ---- Hero / about block on the homepage ----
    Structure (see index.qmd): a .hero flex row containing the
    headshot image and a .hero-text column with the name, title, and
    affiliation. */
@@ -107,35 +133,39 @@ a:hover {
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
- 
+
 .hero-text {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;   /* small gap between name / subtitle / affiliation */
   flex: 1;        /* take up remaining width next to the headshot */
 }
- 
+
 .hero .subtitle {
   font-size: 1.1rem;
   color: #555; /* muted gray, secondary to the bold name above it */
 }
- 
+
 .hero .affiliation {
   color: #777; /* even more muted than the subtitle — tertiary info */
   font-size: 0.95rem;
 }
- 
+
 .hero-links {
   margin-top: 0.75rem;
   font-size: 0.95rem;
 }
- 
+
 .hero-links a {
   margin-right: 1rem; /* spacing between multiple inline links, if any */
 }
- 
+
 /* Headshot photo: shown as a rounded-rectangle "card" at its natural
-   aspect ratio */
+   aspect ratio — width is fixed, height is auto, so the full photo
+   always displays with nothing cropped off. (A circular avatar was
+   tried here first, but cropping this particular photo to a square
+   made the crop feel too tight/zoomed-in on the face; showing the
+   whole image avoids that without needing to alter the photo.) */
 .headshot {
   width: 170px;
   height: auto;
@@ -144,20 +174,23 @@ a:hover {
   margin: 0;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
- 
+
 /* On narrow (mobile) screens, stack the headshot above the text
-   instead of side-by-side, since there is no room for a row. */
+   instead of side-by-side, since there isn't room for a row. */
 @media (max-width: 600px) {
   .hero {
     flex-direction: column;
     align-items: flex-start;
   }
 }
- 
-/* "About" section watermark/background image
+
+/* ---- "About" section watermark/background image (provided by John) ----
    The image lives on its own ::before layer (a separate box drawn
    behind the section's actual text), rather than being set as the
-   .about-section's own `background-image` */
+   .about-section's own `background-image`. That separation matters:
+   it means the image's opacity/brightness can be tuned right here in
+   this file without ever touching the text on top of it, and without
+   needing to re-edit or re-export the image file itself. */
 .about-section {
   position: relative;   /* required so the ::before below (which is
                             `position: absolute`) is positioned
@@ -172,7 +205,7 @@ a:hover {
   background: #ffffff;   /* fallback white showing through wherever
                              the watermark image is faded/transparent */
 }
- 
+
 .about-section::before {
   content: "";           /* required for any ::before to render at all */
   position: absolute;
@@ -183,23 +216,29 @@ a:hover {
   background-position: center;
   background-size: cover;   /* fill the card, cropping the image as
                                 needed, rather than tiling/stretching */
-  opacity: 0.55;  /* Tune the watermark's strength here: lower opacity = lighter/fainter */
+  /* Tune the watermark's strength here: lower opacity = lighter/fainter,
+     filter brightness > 1 washes it out further without just fading to
+     transparent. Adjust these two values to taste. */
+  opacity: 0.55;
   filter: brightness(1.15);
   z-index: 0;   /* sit behind the text (see the next rule) */
 }
- 
-/* Everything that's an actual (direct) child of .about-section is lifted 
-   onto its own stacking layer above the watermark image, so the text 
-   always stays fully legible */
+
+/* Everything that's an actual (direct) child of .about-section — the
+   heading and paragraphs — is lifted onto its own stacking layer
+   above the watermark image, so the text always stays fully legible
+   regardless of what's happening in the image behind it. */
 .about-section > * {
   position: relative;
   z-index: 1;
 }
- 
+
 .about-section h2 {
-  margin-top: 0; /* cancel the global h2 top margin here */
+  margin-top: 0; /* cancel the global h2 top margin here — this is the
+                     first thing inside the card, so it shouldn't have
+                     extra space above it */
 }
- 
+
 /* Research interests / Education sections on the homepage, as cards.
    These are targeted by their auto-generated heading IDs (Quarto
    turns "## Research interests" into id="research-interests", and
@@ -213,30 +252,34 @@ a:hover {
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   margin-bottom: 1.5rem;
 }
- 
-/* Publication / talk / press list entries 
+
+/* ---- Publication / talk / press list entries ----
    Every individual publication (Publications page), talk (Presentations
    page), and press item (Press page) shares the same .pub-entry /
-   .talk-entry markup. Each entry renders as its own small card  */
+   .talk-entry markup, so styling both selectors together keeps all
+   three pages visually consistent. Each entry renders as its own
+   small card (as opposed to the old design, which just separated
+   entries with a thin horizontal divider line). */
 .pub-entry, .talk-entry {
   background: #ffffff;
   border-radius: 12px;
   padding: 1.1rem 1.25rem;
   margin-bottom: 0.9rem;   /* gap between stacked entry cards */
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  border-bottom: none;     /* removes the divider-line style */
+  border-bottom: none;     /* removes the old divider-line style from
+                               the previous (pre-cards) design */
 }
- 
+
 .pub-year, .talk-year {
-  color: #999;    /* muted gray, not the main text */
+  color: #999;    /* muted gray — a secondary detail, not the main text */
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
- 
+
 .pub-journal {
-  font-style: italic; /* citation convention for journal names */
+  font-style: italic; /* standard citation convention for journal names */
 }
- 
+
 .pub-links a, .talk-links a {
   font-size: 0.85rem;    /* smaller than body text — these are the
                              DOI / PubMed / download links under each
@@ -245,7 +288,7 @@ a:hover {
   margin-right: 0.75rem;  /* spacing when multiple links appear
                               side-by-side, e.g. "DOI · PubMed" */
 }
- 
+
 /* The live citation-count number injected by publications.qmd's
    JavaScript (Semantic Scholar / Crossref lookup) — styled as a
    quiet gray badge so it doesn't compete visually with the citation
@@ -255,12 +298,13 @@ a:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #888;
 }
- 
+
 .citation-badge a {
   color: #888; /* the badge is a clickable link to its source, but
-                   should still read as muted/secondary */
+                   should still read as muted/secondary, not like a
+                   normal maroon link */
 }
- 
+
 /* Small explanatory note text that appears above certain lists (e.g.
    the citation-count disclaimer on Publications, or the intro line
    above StoryMaps/dashboards on the Presentations page). */
@@ -270,15 +314,15 @@ a:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
 }
- 
+
 /* "Manuscripts in preparation / under review" entries on the
    Publications page — grayed out slightly since they're not yet
    published, to visually distinguish them from finished work. */
 .in-prep {
   color: #888;
 }
- 
-/*  Shiny Apps & Dashboards cards 
+
+/* ---- Shiny Apps & Dashboards cards ----
    Each app on the Shiny Apps page is a horizontal card: a thumbnail
    screenshot on the left, description/links on the right. */
 .app-entry {
@@ -294,7 +338,7 @@ a:hover {
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
   border-bottom: none;   /* removes the old divider-line style */
 }
- 
+
 .app-thumb {
   width: 190px;
   height: auto;
@@ -306,17 +350,17 @@ a:hover {
   flex-shrink: 0;         /* keep the thumbnail from being squished
                               narrower by the flexbox */
 }
- 
+
 .app-text {
   flex: 1;   /* take up all remaining width next to the thumbnail */
 }
- 
+
 .app-links {
   margin-top: 0.4rem;
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
- 
+
 /* "Open app" link for an app that doesn't have a live URL yet — kept
    in the markup as a real link (so the layout doesn't shift once a
    URL is added) but visually disabled: grayed out and non-clickable. */
@@ -326,7 +370,7 @@ a:hover {
                               just styled to look that way */
   cursor: default;         /* don't show a "hand" cursor on hover */
 }
- 
+
 /* "Materials: In progress" label used on the Presentations page for
    talks that don't have a downloadable poster/slide file yet. */
 .materials-pending {
@@ -335,7 +379,7 @@ a:hover {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-style: italic;
 }
- 
+
 /* On narrow (mobile) screens, stack each app card's thumbnail above
    its text instead of side-by-side, and let the thumbnail grow to
    fill the available width (capped at 280px so it doesn't get huge
@@ -348,9 +392,13 @@ a:hover {
     width: 100%;
     max-width: 280px;
   }
+  .press-thumb {
+    width: 140px;
+    max-width: 140px;
+  }
 }
-  
-/* Press page: a portrait photo alongside entry's citation text
+
+/* Press page: a portrait photo alongside one entry's citation text
    (reuses .app-entry for the card/flex-row and .app-text for the
    text column, same as the Shiny Apps cards above). .app-thumb is
    sized for wide landscape screenshots, so this narrower rule is
