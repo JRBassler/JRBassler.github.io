@@ -1,4 +1,9 @@
 
+---
+title: ""
+page-layout: article
+---
+ 
 <img src="files/banner.png" class="banner-img" alt="">
  
 ::: {.hero}
@@ -15,7 +20,7 @@
  
 ::: {.about-section}
 ## About
-
+ 
 As an experienced statistician, I've honed my skills in higher education, contributing to research and analytical initiatives. I seek to apply advanced spatial and survival statistical methods to public health challenges, with a focus on HIV and Oncology outcomes across Alabama and the Deep South.
 
 I currently serve as Clinical Database Manager II in UAB's Center for AIDS Research (CFAR), and I am completing my Doctor of Public Health (DrPH) in Biostatistics at UAB (defended: July 2026, expected graduation: December 2026), with a dissertation on shared frailty models for spatial data applied to time to HIV viral suppression. My work sits at the intersection of tiume-to-event analysis, spatial and Bayesian statistical methods, and structural determinants of health outcomes — including a [study on historical redlining and delays in HIV treatment](https://doi.org/10.1001/jamainternmed.2024.5003).
