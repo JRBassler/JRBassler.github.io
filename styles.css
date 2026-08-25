@@ -134,13 +134,12 @@ a:hover {
   margin-right: 1rem; /* spacing between multiple inline links, if any */
 }
  
-/* Headshot photo: rendered as a circular "avatar" (border-radius:
-   50% on a square box) rather than rectangular crop */
+/* Headshot photo: shown as a rounded-rectangle "card" at its natural
+   aspect ratio */
 .headshot {
-  height: 140px;
-  width: 140px;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 170px;
+  height: auto;
+  border-radius: 16px;   /* matches the .hero card's own corner radius */
   flex-shrink: 0;   /* never let the flexbox squish the photo narrower */
   margin: 0;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
