@@ -1,169 +1,213 @@
 /* ---- Modern card-based theme ---- */
 
+/* ---- Base page typography ---- */
 body {
+  /* System font stack: uses whatever clean sans-serif font is native
+     to the visitor's OS (San Francisco on Mac, Segoe UI on Windows,
+     etc.) */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: 1.7;
-  color: #2c2c2c;
-  background-color: #f6f4f0;
+  line-height: 1.7;       /* generous line spacing for readability */
+  color: #2c2c2c;         /* soft black body text, not pure #000 */
+  background-color: #f6f4f0; /* warm off-white page background, so the
+                                 white cards below have something to
+                                 visually sit on top of */
 }
-
+ 
+/* Make sure the navbar and all headings use the same sans-serif
+   stack as the body, rather than whatever default the "cosmo" Quarto
+   theme ships with. Keeps typography consistent site-wide. */
 .navbar,
 .navbar a,
 h1, h2, h3, h4, h5, h6,
 .nav-link {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
-
+ 
 .navbar {
-  background-color: #ffffff !important;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  background-color: #ffffff !important; /* force white nav bar even
+                                            though the page body is
+                                            off-white (!important
+                                            overrides Quarto/Bootstrap's
+                                            own navbar background rule) */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04); /* faint separation line
+                                              from the page below,
+                                              instead of a hard border */
 }
-
+ 
 .navbar-title {
-  font-weight: 700;
+  font-weight: 700; /* bold site name ("John R. Bassler") in the nav bar */
 }
-
+ 
+/* Page title and the big name heading in the homepage hero get the same 
+bold, tightened look. */
 h1.title, .hero h1 {
   font-weight: 700;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.015em; /* slightly tighter letter spacing reads
+                                as more "designed" at large sizes */
 }
-
+ 
+/* All ## (h2) section headings site-wide: bold, no underline */
 h2 {
   font-weight: 700;
   font-size: 1.3rem;
   border-bottom: none !important;
   padding-bottom: 0 !important;
-  margin-top: 2.25rem;
+  margin-top: 2.25rem;   /* room above each new section */
   margin-bottom: 1rem;
 }
-
+ 
+/* Links: deep red accent color instead of the theme's default
+   blue, used everywhere. Underline only appears on hover, not 
+   by default */
 a {
-  color: #7a1f2b; /* deep maroon accent, understated */
+  color: #7a1f2b; /* deep red accent */
   text-decoration: none;
 }
-
+ 
 a:hover {
   text-decoration: underline;
 }
-
-/* Buttons (e.g. the CV download button) pick up the same accent */
+ 
+/* Buttons (e.g. the CV download button) pick up the same accent. */
 .btn-outline-primary {
   color: #7a1f2b !important;
   border-color: #7a1f2b !important;
 }
-
+ 
 .btn-outline-primary:hover {
   background-color: #7a1f2b !important;
   border-color: #7a1f2b !important;
   color: #ffffff !important;
 }
-
+ 
 /* Full-width banner above the name on the homepage */
 .banner-img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 14px;
+  border-radius: 14px;                      /* rounded corners to match
+                                                the card aesthetic */
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);  /* soft drop shadow so it
+                                                reads as a "panel" too */
 }
-
-/* Hero / about block on the homepage */
+ 
+/*  Hero / about block on the homepage 
+   Structure (see index.qmd): a .hero flex row containing the
+   headshot image and a .hero-text column with the name, title, and
+   affiliation. */
 .hero {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 1.75rem;
+  align-items: center;   /* vertically center the headshot against
+                             the (usually taller) text block */
+  gap: 1.75rem;           /* spacing between headshot and text */
   margin-bottom: 1.5rem;
-  background: #ffffff;
+  background: #ffffff;    /* the hero itself is a card, matching the
+                              rest of the page's card-based sections */
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
-
+ 
 .hero-text {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  flex: 1;
+  gap: 0.35rem;   /* small gap between name / subtitle / affiliation */
+  flex: 1;        /* take up remaining width next to the headshot */
 }
-
+ 
 .hero .subtitle {
   font-size: 1.1rem;
-  color: #555;
+  color: #555; /* muted gray, secondary to the bold name above it */
 }
-
+ 
 .hero .affiliation {
-  color: #777;
+  color: #777; /* even more muted than the subtitle — tertiary info */
   font-size: 0.95rem;
 }
-
+ 
 .hero-links {
   margin-top: 0.75rem;
   font-size: 0.95rem;
 }
-
+ 
 .hero-links a {
-  margin-right: 1rem;
+  margin-right: 1rem; /* spacing between multiple inline links, if any */
 }
-
+ 
+/* Headshot photo: rendered as a circular "avatar" (border-radius:
+   50% on a square box) rather than rectangular crop */
 .headshot {
-  height: 140px;
-  width: 140px;
+  height: 180px;
+  width: 180px;
   object-fit: cover;
   border-radius: 50%;
-  flex-shrink: 0;
+  flex-shrink: 0;   /* never let the flexbox squish the photo narrower */
   margin: 0;
   box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
-
+ 
+/* On narrow (mobile) screens, stack the headshot above the text
+   instead of side-by-side, since there is no room for a row. */
 @media (max-width: 600px) {
   .hero {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-
-/* "About" section watermark/background image (provided by John).
-   The image lives on its own ::before layer (not the section's own
-   background) so its opacity/brightness can be adjusted here without
-   touching the text on top or re-editing the image file. */
+ 
+/* "About" section watermark/background image
+   The image lives on its own ::before layer (a separate box drawn
+   behind the section's actual text), rather than being set as the
+   .about-section's own `background-image` */
 .about-section {
-  position: relative;
+  position: relative;   /* required so the ::before below (which is
+                            `position: absolute`) is positioned
+                            relative to this box, not the whole page */
   padding: 1.75rem;
   border-radius: 16px;
-  overflow: hidden;
+  overflow: hidden;      /* clips the background image to the card's
+                             rounded corners instead of spilling out
+                             in square corners */
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   margin-bottom: 1.5rem;
-  background: #ffffff;
+  background: #ffffff;   /* fallback white showing through wherever
+                             the watermark image is faded/transparent */
 }
-
+ 
 .about-section::before {
-  content: "";
+  content: "";           /* required for any ::before to render at all */
   position: absolute;
-  inset: 0;
+  inset: 0;               /* shorthand for top/right/bottom/left: 0,
+                              i.e. stretch to fill the whole card */
   background-image: url('files/about-watermark.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  /* Tune the watermark's strength here: lower opacity = lighter/fainter,
-     filter brightness > 1 washes it out further without just fading to
-     transparent. Adjust these two values to taste. */
-  opacity: 0.55;
+  background-size: cover;   /* fill the card, cropping the image as
+                                needed, rather than tiling/stretching */
+  opacity: 0.55;  /* Tune the watermark's strength here: lower opacity = lighter/fainter */
   filter: brightness(1.15);
-  z-index: 0;
+  z-index: 0;   /* sit behind the text (see the next rule) */
 }
-
+ 
+/* Everything that's an actual (direct) child of .about-section is lifted 
+   onto its own stacking layer above the watermark image, so the text 
+   always stays fully legible */
 .about-section > * {
   position: relative;
   z-index: 1;
 }
-
+ 
 .about-section h2 {
-  margin-top: 0;
+  margin-top: 0; /* cancel the global h2 top margin here */
 }
-
-/* Research interests / Education sections on the homepage, as cards */
+ 
+/* Research interests / Education sections on the homepage, as cards.
+   These are targeted by their auto-generated heading IDs (Quarto
+   turns "## Research interests" into id="research-interests", and
+   "## Education" into id="education") rather than a custom CSS class,
+   since no class was added to those sections in index.qmd. */
 #research-interests,
 #education {
   background: #ffffff;
@@ -172,99 +216,133 @@ a:hover {
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   margin-bottom: 1.5rem;
 }
-
-/* Publication / talk / press list entries, each its own card */
+ 
+/* Publication / talk / press list entries 
+   Every individual publication (Publications page), talk (Presentations
+   page), and press item (Press page) shares the same .pub-entry /
+   .talk-entry markup. Each entry renders as its own small card  */
 .pub-entry, .talk-entry {
   background: #ffffff;
   border-radius: 12px;
   padding: 1.1rem 1.25rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.9rem;   /* gap between stacked entry cards */
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  border-bottom: none;
+  border-bottom: none;     /* removes the divider-line style */
 }
-
+ 
 .pub-year, .talk-year {
-  color: #999;
+  color: #999;    /* muted gray, not the main text */
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
-
+ 
 .pub-journal {
-  font-style: italic;
+  font-style: italic; /* citation convention for journal names */
 }
-
+ 
 .pub-links a, .talk-links a {
-  font-size: 0.85rem;
+  font-size: 0.85rem;    /* smaller than body text — these are the
+                             DOI / PubMed / download links under each
+                             citation, meant to be secondary */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  margin-right: 0.75rem;
+  margin-right: 0.75rem;  /* spacing when multiple links appear
+                              side-by-side, e.g. "DOI · PubMed" */
 }
-
+ 
+/* The live citation-count number injected by publications.qmd's
+   JavaScript (Semantic Scholar / Crossref lookup) — styled as a
+   quiet gray badge so it doesn't compete visually with the citation
+   text itself. */
 .citation-badge {
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   color: #888;
 }
-
+ 
 .citation-badge a {
-  color: #888;
+  color: #888; /* the badge is a clickable link to its source, but
+                   should still read as muted/secondary */
 }
-
+ 
+/* Small explanatory note text that appears above certain lists (e.g.
+   the citation-count disclaimer on Publications, or the intro line
+   above StoryMaps/dashboards on the Presentations page). */
 .section-note {
   color: #777;
   font-size: 0.9rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   margin-bottom: 1.25rem;
 }
-
+ 
+/* "Manuscripts in preparation / under review" entries on the
+   Publications page — grayed out slightly since they're not yet
+   published, to visually distinguish them from finished work. */
 .in-prep {
   color: #888;
 }
-
-/* Shiny Apps & Dashboards cards */
+ 
+/*  Shiny Apps & Dashboards cards 
+   Each app on the Shiny Apps page is a horizontal card: a thumbnail
+   screenshot on the left, description/links on the right. */
 .app-entry {
   display: flex;
   flex-direction: row;
-  gap: 1.25rem;
-  align-items: flex-start;
+  gap: 1.25rem;             /* space between thumbnail and text */
+  align-items: flex-start;  /* align to the top, not center, since
+                                descriptions vary in height */
   background: #ffffff;
   border-radius: 14px;
   padding: 1.25rem;
   margin-bottom: 1rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-  border-bottom: none;
+  border-bottom: none;   /* removes the old divider-line style */
 }
-
+ 
 .app-thumb {
   width: 190px;
   height: auto;
-  border-radius: 10px;
-  border: none;
-  flex-shrink: 0;
+  border-radius: 10px;   /* rounded corners on the screenshot itself,
+                             matching the card's own rounding */
+  border: none;           /* the old design had a thin gray border
+                              around thumbnails; the card's own shadow
+                              now provides enough visual separation */
+  flex-shrink: 0;         /* keep the thumbnail from being squished
+                              narrower by the flexbox */
 }
-
+ 
 .app-text {
-  flex: 1;
+  flex: 1;   /* take up all remaining width next to the thumbnail */
 }
-
+ 
 .app-links {
   margin-top: 0.4rem;
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
-
+ 
+/* "Open app" link for an app that doesn't have a live URL yet — kept
+   in the markup as a real link (so the layout doesn't shift once a
+   URL is added) but visually disabled: grayed out and non-clickable. */
 .app-link-pending {
   color: #aaa;
-  pointer-events: none;
-  cursor: default;
+  pointer-events: none;   /* makes the link actually unclickable, not
+                              just styled to look that way */
+  cursor: default;         /* don't show a "hand" cursor on hover */
 }
-
+ 
+/* "Materials: In progress" label used on the Presentations page for
+   talks that don't have a downloadable poster/slide file yet. */
 .materials-pending {
   color: #aaa;
   font-size: 0.85rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-style: italic;
 }
-
+ 
+/* On narrow (mobile) screens, stack each app card's thumbnail above
+   its text instead of side-by-side, and let the thumbnail grow to
+   fill the available width (capped at 280px so it doesn't get huge
+   on a tablet-width screen). */
 @media (max-width: 600px) {
   .app-entry {
     flex-direction: column;
@@ -274,10 +352,17 @@ a:hover {
     max-width: 280px;
   }
 }
-
-/* CV page: give the embedded PDF the same card treatment */
+ 
+/* CV page: give the embedded PDF viewer the same rounded-corners +
+   soft-shadow "card" treatment as everything else on the site,
+   instead of the plain square-cornered border it had in the old
+   design (that border is turned off here via `border: none`). */
 embed[type="application/pdf"] {
   border-radius: 14px !important;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   border: none !important;
 }
+ 
+
+
+Downloaded bassler_site_full.zip Show 
