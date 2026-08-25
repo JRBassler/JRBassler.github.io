@@ -1,6 +1,4 @@
-/* ---- Modern card-based theme ---- */
-
-/* ---- Base page typography ---- */
+/* Base page typography */
 body {
   /* System font stack: uses whatever clean sans-serif font is native
      to the visitor's OS (San Francisco on Mac, Segoe UI on Windows,
@@ -352,7 +350,20 @@ a:hover {
     max-width: 280px;
   }
 }
- 
+  
+/* Press page: a portrait photo alongside entry's citation text
+   (reuses .app-entry for the card/flex-row and .app-text for the
+   text column, same as the Shiny Apps cards above). .app-thumb is
+   sized for wide landscape screenshots, so this narrower rule is
+   used instead for the portrait-oriented photo. */
+.press-thumb {
+  width: 140px;
+  height: auto;
+  border-radius: 10px;
+  border: none;
+  flex-shrink: 0;
+}
+
 /* CV page: give the embedded PDF viewer the same rounded-corners +
    soft-shadow "card" treatment as everything else on the site,
    instead of the plain square-cornered border it had in the old
