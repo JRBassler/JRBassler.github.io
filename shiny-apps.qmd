@@ -72,7 +72,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 :::
 
 ::: {.app-entry}
-<img src="files/charm-shiny.png" alt="Screenshot of the Redlining and Time to Viral Suppression map supplement" class="app-thumb">
+<img src="files/nola-redline-shiny.png" alt="Screenshot of the Redlining and Time to Viral Suppression map supplement" class="app-thumb">
 
 <div class="app-text">
 **Redlining and Time to Viral Suppression Among Persons With HIV** — map supplement to the *JAMA Internal Medicine* redlining study (see [Publications](publications.qmd) and [Press](press.qmd)).
