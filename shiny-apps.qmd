@@ -81,7 +81,6 @@ Selected and publicly available R Shiny applications and related dashboards used
 </div>
 :::
 
-
 <script>
 (function () {
   var canvas = document.getElementById("topo-canvas");
