@@ -47,6 +47,24 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700; /* bold site name ("John R. Bassler") in the nav */
 }
 
+/* ORCID nav link: ORCID's brand guidelines prohibit altering or
+   recreating their green "iD" icon, and Bootstrap Icons (the library
+   used for the other nav icons: Scholar/GitHub/LinkedIn/email) has no
+   built-in ORCID glyph. Rather than hand-draw a restricted logo, this
+   is a plain text link, styled in ORCID's own documented brand green
+   (#A6CE39) and sized down slightly so it sits alongside the icon
+   links without looking like a stray nav item. */
+.navbar a[href="https://orcid.org/0000-0003-2277-9388"] {
+  color: #A6CE39 !important;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.navbar a[href="https://orcid.org/0000-0003-2277-9388"]:hover {
+  color: #8fb42f !important;
+}
+
 /* Page title (used when a .qmd sets a `title:`) and the big name
    heading in the homepage hero get the same bold, tightened look. */
 h1.title, .hero h1 {
@@ -438,6 +456,53 @@ a:hover {
   color: #888;
 }
 
+/* ---- Publications search/filter box ----
+   The text input at the top of the Publications page (see
+   publications.qmd's inline script) that narrows the ~40 entries by
+   title/author/journal/year. Styled as its own small card, matching
+   the .pub-entry / .section-note treatment already used on this
+   page. */
+.pub-search {
+  margin-bottom: 1.25rem;
+}
+
+.pub-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;   /* pill shape, echoes the Copy BibTeX buttons */
+  border: 1px solid #d8d4cd;
+  background: #ffffff;
+  color: #2c2c2c;
+}
+
+.pub-search-input:focus {
+  outline: none;
+  border-color: #7a1f2b;
+  box-shadow: 0 0 0 3px rgba(122,31,43,0.15);
+}
+
+.pub-search-count {
+  font-size: 0.85rem;
+  color: #777;
+  margin-top: 0.4rem;
+  padding-left: 0.25rem;
+}
+
+.pub-no-results {
+  color: #777;
+  font-style: italic;
+}
+
+/* Entries (and, via JS, whole ## sections) filtered out by the search
+   box are removed from layout entirely rather than just visually
+   hidden, so the page doesn't leave behind large gaps. */
+.pub-hidden {
+  display: none !important;
+}
+
 /* ---- Shiny Apps & Dashboards cards ----
    Each app on the Shiny Apps page is a horizontal card: a thumbnail
    screenshot on the left, description/links on the right. */
@@ -665,6 +730,22 @@ embed[type="application/pdf"] {
 }
 
 .quarto-dark .section-note {
+  color: #a19c93;
+}
+
+.quarto-dark .pub-search-input {
+  background: #262420;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #e8e5e0;
+}
+
+.quarto-dark .pub-search-input:focus {
+  border-color: #d9808c;
+  box-shadow: 0 0 0 3px rgba(217,128,140,0.2);
+}
+
+.quarto-dark .pub-search-count,
+.quarto-dark .pub-no-results {
   color: #a19c93;
 }
 
