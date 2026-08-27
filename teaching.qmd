@@ -2,13 +2,16 @@
 title: "Teaching"
 ---
 
-<div class="teaching-hero">
+::: {.teaching-hero}
+<div class="teaching-hero-visual">
 <canvas id="lorenz-canvas" aria-hidden="true"></canvas>
 </div>
 
+::: {.teaching-hero-text}
 I approach teaching biostatistics as translation work — taking rigorous methods and making them usable by students who arrive with very different quantitative backgrounds, from undergraduate honors students to graduate students in biostatistics, epidemiology, and nursing. Whether leading a course, guest lecturing, or working one-on-one as a TA, I try to keep the material grounded in the applied public health problems — HIV care outcomes, health equity, structural determinants of health — that drew me to it in the first place.
+:::
 
-[**Read my full teaching statement (PDF)**](files/teaching/Bassler_Teaching_Statement.pdf){.btn .btn-outline-primary target="_blank"}
+:::
 
 ## Teaching Experience
 
