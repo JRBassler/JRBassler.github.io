@@ -1,3 +1,6 @@
+/* ============================================================
+   Modern card-based theme
+   ============================================================ */
 
 /* ---- Base page typography ---- */
 body {
@@ -305,6 +308,45 @@ a:hover {
                    normal maroon link */
 }
 
+/* Altmetric's third-party widget (embed.js) renders its own SVG bar
+   into this span — this just controls its vertical alignment so it
+   sits on the same line as the DOI/PubMed links and citation count
+   instead of dropping to its own line. */
+.altmetric-embed {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* "Copy BibTeX" button on each Publications entry. Styled as a tiny
+   outline pill rather than a text link, since it's an action
+   (copies to clipboard) rather than a navigation link like the
+   other items in .pub-links. */
+.bibtex-copy-btn {
+  font-size: 0.78rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: #7a1f2b;
+  background: #ffffff;
+  border: 1px solid #7a1f2b;
+  border-radius: 999px;   /* fully-rounded "pill" shape */
+  padding: 0.15rem 0.65rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.bibtex-copy-btn:hover {
+  background: #7a1f2b;
+  color: #ffffff;
+}
+
+/* Brief "Copied!" confirmation state, shown for 1.5s after a click
+   (toggled by the clipboard script in publications.qmd). Green
+   instead of maroon so it reads as a distinct success confirmation. */
+.bibtex-copy-btn.bibtex-copied {
+  background: #2e7d4f;
+  border-color: #2e7d4f;
+  color: #ffffff;
+}
+
 /* Small explanatory note text that appears above certain lists (e.g.
    the citation-count disclaimer on Publications, or the intro line
    above StoryMaps/dashboards on the Presentations page). */
@@ -420,7 +462,3 @@ embed[type="application/pdf"] {
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
   border: none !important;
 }
- 
-
-
-Downloaded bassler_site_full.zip Show 
