@@ -243,6 +243,20 @@ a:hover {
   z-index: 1;
 }
 
+/* Animated particle "constellation" layer (tsParticles, loaded in
+   index.qmd) that drifts over the topo watermark above and sits
+   behind the About text below. An ID selector so it reliably wins
+   over the more general ".about-section > *" rule just above,
+   regardless of stylesheet order (a lower z-index here is what keeps
+   it behind the text; position: absolute + inset: 0 makes it fill
+   the whole card, clipped to the rounded corners by the card's own
+   `overflow: hidden`). */
+#about-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .about-section h2 {
   margin-top: 0; /* cancel the global h2 top margin here — this is the
                      first thing inside the card, so it shouldn't have
