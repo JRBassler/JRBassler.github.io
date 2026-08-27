@@ -5,7 +5,11 @@ project:
 website:
   title: "John R. Bassler"
   description: "Clinical Database Manager II, UAB Center for AIDS Research. Spatial and survival statistical methods for HIV care outcomes in Alabama and the Deep South."
-  site-url: "https://jrbassler.github.io"
+  site-url: "https://www.johnrbassler.com"
+  favicon: files/favicon.png
+  open-graph: true
+  twitter-card: true
+  image: files/og-image.png
   navbar:
     background: light
     left:
@@ -36,6 +40,9 @@ website:
       - icon: envelope
         href: mailto:johnrbassler@gmail.com
         aria-label: Email
+      - text: "ORCID"
+        href: https://orcid.org/0000-0003-2277-9388
+        aria-label: "ORCID iD"
   page-footer:
     left: "© 2026 John R. Bassler"
     center: "[Google Scholar](https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en) · [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/john.bassler.2/bibliography/public/) · [GitHub](https://github.com/JRBassler)"
@@ -51,5 +58,7 @@ format:
     grid:
       body-width: 850px
     link-external-newwindow: true
+    include-in-header:
+      - file: _includes/goatcounter.html
     include-after-body:
       - file: _includes/toggle-first.html
