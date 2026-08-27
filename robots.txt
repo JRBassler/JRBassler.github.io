@@ -1,1 +1,1 @@
-Sitemap: https://jrbassler.github.io/sitemap.xml
+Sitemap: https://www.johnrbassler.com/sitemap.xml
