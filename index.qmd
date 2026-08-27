@@ -1,5 +1,6 @@
 ---
 title: ""
+pagetitle: "John R. Bassler, DrPH, MS"
 page-layout: article
 ---
 
@@ -47,6 +48,43 @@ Committee Members: Dr. Dustin M. Long, Dr. Emily Levitan, Dr. Aadia Rana, Dr. D.
 *Minor: Communication Studies*
 
 See the full [CV](cv.qmd) for professional experience, grant support, teaching, service, and honors.
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "John R. Bassler",
+  "alternateName": "John R. Bassler, DrPH, MS",
+  "jobTitle": "Clinical Database Manager II",
+  "description": "Clinical Database Manager II, UAB Center for AIDS Research. Spatial and survival statistical methods for HIV care outcomes in Alabama and the Deep South.",
+  "url": "https://www.johnrbassler.com/",
+  "image": "https://www.johnrbassler.com/files/headshot.jpg",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "University of Alabama at Birmingham, Center for AIDS Research (CFAR)",
+    "url": "https://www.uab.edu/medicine/cfar/"
+  },
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Alabama at Birmingham"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "West Virginia University"
+    }
+  ],
+  "sameAs": [
+    "https://orcid.org/0000-0003-2277-9388",
+    "https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en",
+    "https://github.com/JRBassler",
+    "https://www.linkedin.com/in/john-bassler-drph/",
+    "https://www.ncbi.nlm.nih.gov/myncbi/john.bassler.2/bibliography/public/"
+  ]
+}
+</script>
+```
 
 <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@4/tsparticles.slim.bundle.min.js"></script>
 <script>
