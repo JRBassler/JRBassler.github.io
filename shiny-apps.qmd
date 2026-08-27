@@ -27,7 +27,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 <div class="app-text">
 **SPARTO-Choropleths** — open-access dashboard for geographic visualization of HIV care continuum outcomes.
 
-<div class="app-links">[Open app](https://jbassler.shinyapps.io/SPARTO-Choropleths/) · [OSF repository](https://doi.org/10.17605/OSF.IO/4H5WY){target="_blank"}</div>
+<div class="app-links">[Open app](https://jbassler.shinyapps.io/SPARTO-Choropleths/){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/4H5WY){target="_blank"}</div>
 </div>
 :::
 
@@ -47,7 +47,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 <div class="app-text">
 **Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South** — map supplement to the geospatial analysis of HIV testing coverage across the Southeast.
 
-<div class="app-links">[Open app](#){https://jbassler.shinyapps.io/UAB-RTZ-app/} · [OSF repository](https://doi.org/10.17605/OSF.IO/QZG94){target="_blank"}</div>
+<div class="app-links">[Open app](https://jbassler.shinyapps.io/UAB-RTZ-app/){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/QZG94){target="_blank"}</div>
 </div>
 :::
 
@@ -57,7 +57,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 <div class="app-text">
 **Epidemic Preparedness and Vaccine Equity: Access for All** — map supplement exploring vaccine access and epidemic preparedness.
 
-<div class="app-links">[Open app](#){https://jbassler.shinyapps.io/AL-COVID19-DG/} · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
+<div class="app-links">[Open app](https://jbassler.shinyapps.io/AL-COVID19-DG/){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
 </div>
 :::
 
@@ -67,7 +67,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 <div class="app-text">
 **Comprehensive Harm Reduction and Medicine (CHRM) in Alabama** — map supplement on harm reduction resource access in Alabama.
 
-<div class="app-links">[Open app](#){https://jbassler.shinyapps.io/CRHM-AL-Providers/} · [OSF repository](https://doi.org/10.17605/OSF.IO/5GDA4){target="_blank"}</div>
+<div class="app-links">[Open app](https://jbassler.shinyapps.io/CRHM-AL-Providers/){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/5GDA4){target="_blank"}</div>
 </div>
 :::
 
@@ -77,7 +77,7 @@ Selected and publicly available R Shiny applications and related dashboards used
 <div class="app-text">
 **Redlining and Time to Viral Suppression Among Persons With HIV** — map supplement to the *JAMA Internal Medicine* redlining study (see [Publications](publications.qmd) and [Press](press.qmd)).
 
-<div class="app-links">[Open app](#){https://jbassler.shinyapps.io/NOLA-TVS-Redlining/} · [OSF repository](https://doi.org/10.17605/OSF.IO/YJKUN){target="_blank"}</div>
+<div class="app-links">[Open app](https://jbassler.shinyapps.io/NOLA-TVS-Redlining/){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/YJKUN){target="_blank"}</div>
 </div>
 :::
 
