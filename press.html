@@ -810,7 +810,39 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>
+// Quarto always renders the light/dark toggle inside its own
+// .quarto-navbar-tools element, which sits after the icon links
+// (Google Scholar / GitHub / LinkedIn / email) rather than before
+// them, and there's no theme/navbar YAML option to change that
+// ordering. This runs on every page (included site-wide via
+// format.html.include-after-body in _quarto.yml) and simply moves
+// the already-rendered toggle button to be the first item in that
+// icon list instead, so it reads left-to-right as: toggle, Google
+// Scholar, GitHub, LinkedIn, email, (search).
+//
+// This only relocates the existing DOM node — it doesn't clone or
+// recreate it, so the toggle's own click handler and Quarto's
+// internal wiring keep working exactly as before.
+(function () {
+  function moveToggle() {
+    var toggle = document.querySelector(".quarto-color-scheme-toggle");
+    var iconList = document.querySelector(".navbar-nav.ms-auto");
+    if (!toggle || !iconList) return;
 
+    var li = document.createElement("li");
+    li.className = "nav-item compact";
+    li.appendChild(toggle);
+    iconList.insertBefore(li, iconList.firstChild);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", moveToggle);
+  } else {
+    moveToggle();
+  }
+})();
+</script>
 
 
 
