@@ -160,18 +160,30 @@ a:hover {
   flex: 1;        /* take up remaining width next to the headshot/visual */
 }
 
+/* The Teaching/Shiny Apps heroes should have their canvas fill the
+   full height of the card (matching however tall the adjacent text
+   happens to be), unlike the homepage hero where the headshot photo
+   stays centered at its own natural height. align-items: stretch
+   overrides the "center" set above just for these two, and removing
+   the visual box's own fixed height (further down) lets it grow to
+   match — flexbox stretches a height:auto child to fill the row. */
+.teaching-hero,
+.shiny-hero {
+  align-items: stretch;
+}
+
 /* Teaching and Shiny Apps pages: generative canvas visuals, playing
-   the same role .headshot plays in the homepage hero — a fixed-size
-   decorative box beside the intro text. Each is rendered by its own
-   page's <canvas> script (see the JS at the end of teaching.qmd and
-   shiny-apps.qmd). Kept at a fixed dark backdrop regardless of the
-   site's light/dark mode, same as the homepage's banner-img photo
-   isn't re-colored between modes either: this is decorative art, not
-   themed UI chrome. */
+   the same role .headshot plays in the homepage hero — a decorative
+   box beside the intro text, sized to fill the card's height (see
+   align-items: stretch above; width stays fixed). Each is rendered by
+   its own page's <canvas> script (see the JS at the end of
+   teaching.qmd and shiny-apps.qmd). Kept at a fixed dark backdrop
+   regardless of the site's light/dark mode, same as the homepage's
+   banner-img photo isn't re-colored between modes either: this is
+   decorative art, not themed UI chrome. */
 .teaching-hero-visual,
 .shiny-hero-visual {
   width: 260px;
-  height: 190px;
   flex-shrink: 0;
   border-radius: 14px;
   overflow: hidden;
