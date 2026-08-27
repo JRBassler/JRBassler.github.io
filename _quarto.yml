@@ -44,10 +44,12 @@ website:
 format:
   html:
     theme:
-      light: cosmo
       dark: darkly
+      light: cosmo
     css: styles.css
     toc: false
     grid:
       body-width: 850px
     link-external-newwindow: true
+    include-after-body:
+      - file: _includes/toggle-first.html
