@@ -4,7 +4,2114 @@ title: "Publications"
 
 Full bibliography also maintained on [PubMed](https://www.ncbi.nlm.nih.gov/myncbi/john.bassler.2/bibliography/public/){target="_blank"} and [Google Scholar](https://scholar.google.com/citations?user=0GkEp_cAAAAJ&hl=en){target="_blank"}. Listed newest first.
 
+```{=html}
+<div class="pub-search">
+  <label for="pub-search-input" class="visually-hidden">Search publications by title, author, journal, or year</label>
+  <input type="text" id="pub-search-input" class="pub-search-input" placeholder="Search by title, author, journal, or year…" autocomplete="off">
+  <div id="pub-search-count" class="pub-search-count" aria-live="polite"></div>
+</div>
+<p id="pub-no-results" class="pub-no-results" hidden>No publications match your search.</p>
+```
+
 ## Peer-reviewed journal articles
+
+```{=html}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Publications by John R. Bassler",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Retention in HIV Care Still Matters: A Longitudinal Multisite Analysis",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Kay ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Bamford L"
+          },
+          {
+            "@type": "Person",
+            "name": "Browne L"
+          },
+          {
+            "@type": "Person",
+            "name": "Burkholder G"
+          },
+          {
+            "@type": "Person",
+            "name": "Christopoulos K"
+          },
+          {
+            "@type": "Person",
+            "name": "Crane H"
+          },
+          {
+            "@type": "Person",
+            "name": "Gripshover B"
+          },
+          {
+            "@type": "Person",
+            "name": "Mayer KH"
+          },
+          {
+            "@type": "Person",
+            "name": "Moore RD"
+          },
+          {
+            "@type": "Person",
+            "name": "Willig A"
+          },
+          {
+            "@type": "Person",
+            "name": "Mugavero M"
+          },
+          {
+            "@type": "Person",
+            "name": "Giordano T"
+          }
+        ],
+        "datePublished": "2025",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "J Acquir Immune Defic Syndr",
+          "volumeNumber": "100"
+        },
+        "sameAs": "https://doi.org/10.1097/QAI.0000000000003711",
+        "url": "https://doi.org/10.1097/QAI.0000000000003711"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Use of tenofovir-based PrEP among pregnant women in South Africa",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Matthews LT"
+          },
+          {
+            "@type": "Person",
+            "name": "Bruxvoort KJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Jaggernath M"
+          },
+          {
+            "@type": "Person",
+            "name": "Kriel Y"
+          },
+          {
+            "@type": "Person",
+            "name": "Smith PM"
+          },
+          {
+            "@type": "Person",
+            "name": "Haberer JE"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Bennett K"
+          },
+          {
+            "@type": "Person",
+            "name": "Psaros C"
+          },
+          {
+            "@type": "Person",
+            "name": "Bangsberg DR"
+          },
+          {
+            "@type": "Person",
+            "name": "Hurwitz KW"
+          },
+          {
+            "@type": "Person",
+            "name": "Smit JA"
+          }
+        ],
+        "datePublished": "2025",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "AIDS",
+          "volumeNumber": "39"
+        },
+        "sameAs": "https://doi.org/10.1097/QAD.0000000000004090",
+        "url": "https://doi.org/10.1097/QAD.0000000000004090"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Predictors of plasma high-density lipoprotein cholesterol concentrations in the Coronary Artery Risk Development in Young Adults (CARDIA) Study",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Shikany JM"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Reis J"
+          },
+          {
+            "@type": "Person",
+            "name": "Schreiner P"
+          },
+          {
+            "@type": "Person",
+            "name": "Lewis B"
+          },
+          {
+            "@type": "Person",
+            "name": "Redden DT"
+          },
+          {
+            "@type": "Person",
+            "name": "Wilkins JT"
+          },
+          {
+            "@type": "Person",
+            "name": "Lewis CE"
+          }
+        ],
+        "datePublished": "2025",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Journal of Lipid Research",
+          "volumeNumber": "66"
+        },
+        "sameAs": "https://doi.org/10.1016/j.jlr.2024.100717",
+        "url": "https://doi.org/10.1016/j.jlr.2024.100717"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Redlining and Time to Viral Suppression Among Persons With HIV",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Ostrenga L"
+          },
+          {
+            "@type": "Person",
+            "name": "Kay ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Long DM"
+          },
+          {
+            "@type": "Person",
+            "name": "Mugavero MJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Nassel A"
+          },
+          {
+            "@type": "Person",
+            "name": "Parman M"
+          },
+          {
+            "@type": "Person",
+            "name": "Rana A"
+          },
+          {
+            "@type": "Person",
+            "name": "Levitan EB"
+          },
+          {
+            "@type": "Person",
+            "name": "Batey DS"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "JAMA Intern Med",
+          "volumeNumber": "184"
+        },
+        "sameAs": "https://doi.org/10.1001/jamainternmed.2024.5003",
+        "url": "https://doi.org/10.1001/jamainternmed.2024.5003"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Reducing substance use stigma among clinical and non-clinical staff who provide care for people living with HIV in the Deep South: A Pilot Training Intervention",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Figgat MC"
+          },
+          {
+            "@type": "Person",
+            "name": "Jaiswal J"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Gagnon K"
+          },
+          {
+            "@type": "Person",
+            "name": "Mulrain M"
+          },
+          {
+            "@type": "Person",
+            "name": "Reed-Pickens H"
+          },
+          {
+            "@type": "Person",
+            "name": "O’Beirne R"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Journal of the Association of Nurses in AIDS Care",
+          "volumeNumber": "35"
+        },
+        "sameAs": "https://doi.org/10.1097/JNC.0000000000000502",
+        "url": "https://doi.org/10.1097/JNC.0000000000000502"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Human Papillomavirus Vaccine Beliefs and Intentions Post-COVID-19 Vaccine Release among Mothers in Alabama Vaccine",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Brady K"
+          },
+          {
+            "@type": "Person",
+            "name": "Lee A"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Pierce JY"
+          },
+          {
+            "@type": "Person",
+            "name": "Daniel CL"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Vaccine",
+          "volumeNumber": "42"
+        },
+        "sameAs": "https://doi.org/10.1016/j.vaccine.2024.06.014",
+        "url": "https://doi.org/10.1016/j.vaccine.2024.06.014"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Oral PrEP uptake, adherence, and persistence during periconception periods among women in South Africa: an intervention study",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Matthews LT"
+          },
+          {
+            "@type": "Person",
+            "name": "Jaggernath M"
+          },
+          {
+            "@type": "Person",
+            "name": "Kriel Y"
+          },
+          {
+            "@type": "Person",
+            "name": "Smith PM"
+          },
+          {
+            "@type": "Person",
+            "name": "Haberer JE"
+          },
+          {
+            "@type": "Person",
+            "name": "Baeten JM"
+          },
+          {
+            "@type": "Person",
+            "name": "Hendrix CW"
+          },
+          {
+            "@type": "Person",
+            "name": "Ware NC"
+          },
+          {
+            "@type": "Person",
+            "name": "Moodley P"
+          },
+          {
+            "@type": "Person",
+            "name": "Pillay M"
+          },
+          {
+            "@type": "Person",
+            "name": "Bennet K"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Psaros C"
+          },
+          {
+            "@type": "Person",
+            "name": "Hurwitz KE"
+          },
+          {
+            "@type": "Person",
+            "name": "Bangsberg DR"
+          },
+          {
+            "@type": "Person",
+            "name": "Smit JA"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "AIDS",
+          "volumeNumber": "38"
+        },
+        "sameAs": "https://doi.org/10.1097/QAD.0000000000003925",
+        "url": "https://doi.org/10.1097/QAD.0000000000003925"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Implementation of a Safer Conception Program for HIV-Affected Men and Women in rural Uganda",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Matthews LT"
+          },
+          {
+            "@type": "Person",
+            "name": "Owembabazi M"
+          },
+          {
+            "@type": "Person",
+            "name": "Tukwasibwe D"
+          },
+          {
+            "@type": "Person",
+            "name": "Najjuma A"
+          },
+          {
+            "@type": "Person",
+            "name": "Muyindike W"
+          },
+          {
+            "@type": "Person",
+            "name": "Tumwine J"
+          },
+          {
+            "@type": "Person",
+            "name": "Hornstein B"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Long DM"
+          },
+          {
+            "@type": "Person",
+            "name": "Gill E"
+          },
+          {
+            "@type": "Person",
+            "name": "Young C"
+          },
+          {
+            "@type": "Person",
+            "name": "Chitneni P"
+          },
+          {
+            "@type": "Person",
+            "name": "Psaros C"
+          },
+          {
+            "@type": "Person",
+            "name": "Kanyesigye M"
+          },
+          {
+            "@type": "Person",
+            "name": "Kalyebara P"
+          },
+          {
+            "@type": "Person",
+            "name": "Kaida A"
+          },
+          {
+            "@type": "Person",
+            "name": "Bwana M"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Global Public Health",
+          "volumeNumber": "19"
+        },
+        "sameAs": "https://doi.org/10.1080/17441692.2024.2342023",
+        "url": "https://doi.org/10.1080/17441692.2024.2342023"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Community-based Services for Hospitalized Patients with Serious Injection-Related Infections in Alabama: A Brief Report",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Gagnon KW"
+          },
+          {
+            "@type": "Person",
+            "name": "Bradford W"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Nassel A"
+          },
+          {
+            "@type": "Person",
+            "name": "Kay ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Jeziorski M"
+          },
+          {
+            "@type": "Person",
+            "name": "Prados M"
+          },
+          {
+            "@type": "Person",
+            "name": "McCleskey B"
+          },
+          {
+            "@type": "Person",
+            "name": "Kobie J"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infectious Diseases",
+          "volumeNumber": "11"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofae231",
+        "url": "https://doi.org/10.1093/ofid/ofae231"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Hospitalization is a missed opportunity for HIV screening, pre-exposure prophylaxis, and treatment",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bradford W"
+          },
+          {
+            "@type": "Person",
+            "name": "Akselrod H"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Gagnon KW"
+          },
+          {
+            "@type": "Person",
+            "name": "Burkholder G"
+          },
+          {
+            "@type": "Person",
+            "name": "Carpenter JE"
+          },
+          {
+            "@type": "Person",
+            "name": "Steck A"
+          },
+          {
+            "@type": "Person",
+            "name": "Catalanotti J"
+          },
+          {
+            "@type": "Person",
+            "name": "Kou I"
+          },
+          {
+            "@type": "Person",
+            "name": "McGonigle K"
+          },
+          {
+            "@type": "Person",
+            "name": "Mai W"
+          },
+          {
+            "@type": "Person",
+            "name": "Notis M"
+          },
+          {
+            "@type": "Person",
+            "name": "Brokus C"
+          },
+          {
+            "@type": "Person",
+            "name": "Kattahuzhy S"
+          },
+          {
+            "@type": "Person",
+            "name": "Rosenthal E"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Addict Sci Clin Pract",
+          "volumeNumber": "19"
+        },
+        "sameAs": "https://doi.org/10.1186/s13722-024-00451-z",
+        "url": "https://doi.org/10.1186/s13722-024-00451-z"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "The Neuromechanics of Inspiratory Muscles in Mechanical Ventilation Liberation Success and Failure",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Aljohani H"
+          },
+          {
+            "@type": "Person",
+            "name": "Russell D"
+          },
+          {
+            "@type": "Person",
+            "name": "Kim Y"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Lowman J"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Cureus",
+          "volumeNumber": "16"
+        },
+        "sameAs": "https://doi.org/10.7759/cureus.51570",
+        "url": "https://doi.org/10.7759/cureus.51570"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Long COVID prevalence and associated characteristics among a South Alabama population",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Daniel CL"
+          },
+          {
+            "@type": "Person",
+            "name": "Fillingim S"
+          },
+          {
+            "@type": "Person",
+            "name": "James J"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Lee A"
+          }
+        ],
+        "datePublished": "2023",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Public Health",
+          "volumeNumber": "221"
+        },
+        "sameAs": "https://doi.org/10.1016/j.puhe.2023.06.008",
+        "url": "https://doi.org/10.1016/j.puhe.2023.06.008"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Biological Effective Radiation Dose for Multiple Myeloma Palliation",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Meredith RF"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "McDonald AM"
+          },
+          {
+            "@type": "Person",
+            "name": "Stahl JM"
+          },
+          {
+            "@type": "Person",
+            "name": "Redden DT"
+          },
+          {
+            "@type": "Person",
+            "name": "Bonner JA"
+          }
+        ],
+        "datePublished": "2023",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Adv Radiat Oncol",
+          "volumeNumber": "8"
+        },
+        "sameAs": "https://doi.org/10.1016/j.adro.2023.101214",
+        "url": "https://doi.org/10.1016/j.adro.2023.101214"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Development and implementation of a distributed data network between an academic institution and state health departments to investigate variation in time to HIV viral suppression in the Deep South",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Cagle I"
+          },
+          {
+            "@type": "Person",
+            "name": "Crear D"
+          },
+          {
+            "@type": "Person",
+            "name": "Kay ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Long DM"
+          },
+          {
+            "@type": "Person",
+            "name": "Mugavero MJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Nassel AF"
+          },
+          {
+            "@type": "Person",
+            "name": "Ostrenga L"
+          },
+          {
+            "@type": "Person",
+            "name": "Parman M"
+          },
+          {
+            "@type": "Person",
+            "name": "Preg S"
+          },
+          {
+            "@type": "Person",
+            "name": "Wang X"
+          },
+          {
+            "@type": "Person",
+            "name": "Batey DS"
+          },
+          {
+            "@type": "Person",
+            "name": "Rana A"
+          },
+          {
+            "@type": "Person",
+            "name": "Levitan EB"
+          }
+        ],
+        "datePublished": "2023",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "BMC Public Health",
+          "volumeNumber": "23"
+        },
+        "sameAs": "https://doi.org/10.1186/s12889-023-15924-0",
+        "url": "https://doi.org/10.1186/s12889-023-15924-0"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Geospatial Analysis of Time to Human Immunodeficiency Virus (HIV) Diagnosis and Adult HIV Testing Coverage Highlights Areas for Intervention in the US Southeast",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Matthews LT"
+          },
+          {
+            "@type": "Person",
+            "name": "Long DM"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Nassel A"
+          },
+          {
+            "@type": "Person",
+            "name": "Levitan EB"
+          },
+          {
+            "@type": "Person",
+            "name": "Heath SL"
+          },
+          {
+            "@type": "Person",
+            "name": "Rastegar J"
+          },
+          {
+            "@type": "Person",
+            "name": "Pratt MC"
+          },
+          {
+            "@type": "Person",
+            "name": "Kempf MC"
+          }
+        ],
+        "datePublished": "2023",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infect Dis",
+          "volumeNumber": "10"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofad107",
+        "url": "https://doi.org/10.1093/ofid/ofad107"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Methamphetamines and Serious Injection-Related Infections: Opioid Use Care Continuum and Opportunities to End Alabama's Drug Crisis",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Levy S"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Gagnon K"
+          },
+          {
+            "@type": "Person",
+            "name": "Prados M"
+          },
+          {
+            "@type": "Person",
+            "name": "Jeziorski M"
+          },
+          {
+            "@type": "Person",
+            "name": "McCleskey B"
+          },
+          {
+            "@type": "Person",
+            "name": "Crockett K"
+          },
+          {
+            "@type": "Person",
+            "name": "Li L"
+          },
+          {
+            "@type": "Person",
+            "name": "Bradford D"
+          },
+          {
+            "@type": "Person",
+            "name": "Cropsey K"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2023",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infect Dis",
+          "volumeNumber": "10"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofac708",
+        "url": "https://doi.org/10.1093/ofid/ofac708"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "COVID-19 Vaccine Knowledge, Attitudes, and Practices in Alabama: The Case for Primary Health Care Providers",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Redden DT"
+          },
+          {
+            "@type": "Person",
+            "name": "Hall AG"
+          },
+          {
+            "@type": "Person",
+            "name": "Ford ET"
+          },
+          {
+            "@type": "Person",
+            "name": "Chrapah S"
+          },
+          {
+            "@type": "Person",
+            "name": "Erwin PC"
+          }
+        ],
+        "datePublished": "2022",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "J Public Health Manag Pract",
+          "volumeNumber": "28"
+        },
+        "sameAs": "https://doi.org/10.1097/PHH.0000000000001556",
+        "url": "https://doi.org/10.1097/PHH.0000000000001556"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "The Safety and Immunologic Effectiveness of the Live Varicella-Zoster Vaccine in Patients Receiving Tumor Necrosis Factor Inhibitor Therapy : A Randomized Controlled Trial",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Curtis JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Cofield SS"
+          },
+          {
+            "@type": "Person",
+            "name": "Bridges SL Jr"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Deodhar A"
+          },
+          {
+            "@type": "Person",
+            "name": "Ford TL"
+          },
+          {
+            "@type": "Person",
+            "name": "Huffstutter J"
+          },
+          {
+            "@type": "Person",
+            "name": "Jankeel A"
+          },
+          {
+            "@type": "Person",
+            "name": "Kivitz A"
+          },
+          {
+            "@type": "Person",
+            "name": "Kamal S"
+          },
+          {
+            "@type": "Person",
+            "name": "Lindsey S"
+          },
+          {
+            "@type": "Person",
+            "name": "Messaoudi I"
+          },
+          {
+            "@type": "Person",
+            "name": "Mendoza N"
+          },
+          {
+            "@type": "Person",
+            "name": "Michaud K"
+          },
+          {
+            "@type": "Person",
+            "name": "Mikuls TR"
+          },
+          {
+            "@type": "Person",
+            "name": "Ridley D"
+          },
+          {
+            "@type": "Person",
+            "name": "Shergy W"
+          },
+          {
+            "@type": "Person",
+            "name": "Siegel SAR"
+          },
+          {
+            "@type": "Person",
+            "name": "Winthrop KL"
+          }
+        ],
+        "datePublished": "2021",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Ann Intern Med",
+          "volumeNumber": "174"
+        },
+        "sameAs": "https://doi.org/10.7326/M20-6928",
+        "url": "https://doi.org/10.7326/M20-6928"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Resveratrol and exercise combined to treat functional limitations in late life: A pilot randomized controlled trial",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Harper SA"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Peramsetty S"
+          },
+          {
+            "@type": "Person",
+            "name": "Yang Y"
+          },
+          {
+            "@type": "Person",
+            "name": "Roberts LM"
+          },
+          {
+            "@type": "Person",
+            "name": "Drummer D"
+          },
+          {
+            "@type": "Person",
+            "name": "Mankowski RT"
+          },
+          {
+            "@type": "Person",
+            "name": "Leeuwenburgh C"
+          },
+          {
+            "@type": "Person",
+            "name": "Ricart K"
+          },
+          {
+            "@type": "Person",
+            "name": "Patel RP"
+          },
+          {
+            "@type": "Person",
+            "name": "Bamman MM"
+          },
+          {
+            "@type": "Person",
+            "name": "Anton SD"
+          },
+          {
+            "@type": "Person",
+            "name": "Jaeger BC"
+          },
+          {
+            "@type": "Person",
+            "name": "Buford TW"
+          }
+        ],
+        "datePublished": "2021",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Exp Gerontol",
+          "volumeNumber": "143"
+        },
+        "sameAs": "https://doi.org/10.1016/j.exger.2020.111111",
+        "url": "https://doi.org/10.1016/j.exger.2020.111111"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "\"Effect of very dense artifacts on Hologic and general electric bone densitometry results\"",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Morgan SL"
+          },
+          {
+            "@type": "Person",
+            "name": "Krueger D"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Burroughs L"
+          },
+          {
+            "@type": "Person",
+            "name": "Borchardt G"
+          },
+          {
+            "@type": "Person",
+            "name": "Yester M"
+          },
+          {
+            "@type": "Person",
+            "name": "Binkley N"
+          },
+          {
+            "@type": "Person",
+            "name": "Redden D"
+          }
+        ],
+        "datePublished": "2020",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Arch Osteoporos",
+          "volumeNumber": "15"
+        },
+        "sameAs": "https://doi.org/10.1007/s11657-020-00742-3",
+        "url": "https://doi.org/10.1007/s11657-020-00742-3"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Translating School Physical Education and Activity Policies into Practice: A Case Study",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "O'Hara Tompkins N"
+          },
+          {
+            "@type": "Person",
+            "name": "Northrup K"
+          },
+          {
+            "@type": "Person",
+            "name": "Grant J"
+          },
+          {
+            "@type": "Person",
+            "name": "Weikle MF"
+          },
+          {
+            "@type": "Person",
+            "name": "Long D"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Workman C"
+          },
+          {
+            "@type": "Person",
+            "name": "Ramsey Z"
+          },
+          {
+            "@type": "Person",
+            "name": "Jarrett T"
+          },
+          {
+            "@type": "Person",
+            "name": "Sirk H"
+          },
+          {
+            "@type": "Person",
+            "name": "Cottrell L"
+          }
+        ],
+        "datePublished": "2020",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Transl J Am Coll Sports Med",
+          "volumeNumber": "5"
+        },
+        "sameAs": "https://doi.org/10.1249/tjx.0000000000000132",
+        "url": "https://doi.org/10.1249/tjx.0000000000000132"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Intimate Partner Violence Experiences Among Men Living with HIV in Rural Appalachia",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bryan N"
+          },
+          {
+            "@type": "Person",
+            "name": "Davidov DM"
+          },
+          {
+            "@type": "Person",
+            "name": "Dick T"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Fisher M"
+          }
+        ],
+        "datePublished": "2019",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "AIDS Behav",
+          "volumeNumber": "23"
+        },
+        "sameAs": "https://doi.org/10.1007/s10461-019-02438-3",
+        "url": "https://doi.org/10.1007/s10461-019-02438-3"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Tissue-Resident Macrophages Promote Renal Cystic Disease",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Zimmerman KA"
+          },
+          {
+            "@type": "Person",
+            "name": "Song CJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Li Z"
+          },
+          {
+            "@type": "Person",
+            "name": "Lever JM"
+          },
+          {
+            "@type": "Person",
+            "name": "Crossman DK"
+          },
+          {
+            "@type": "Person",
+            "name": "Rains A"
+          },
+          {
+            "@type": "Person",
+            "name": "Aloria EJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Gonzalez NM"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Zhou J"
+          },
+          {
+            "@type": "Person",
+            "name": "Crowley MR"
+          },
+          {
+            "@type": "Person",
+            "name": "Revell DZ"
+          },
+          {
+            "@type": "Person",
+            "name": "Yan Z"
+          },
+          {
+            "@type": "Person",
+            "name": "Shan D"
+          },
+          {
+            "@type": "Person",
+            "name": "Benveniste EN"
+          },
+          {
+            "@type": "Person",
+            "name": "George JF"
+          },
+          {
+            "@type": "Person",
+            "name": "Mrug M"
+          },
+          {
+            "@type": "Person",
+            "name": "Yoder BK"
+          }
+        ],
+        "datePublished": "2019",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "J Am Soc Nephrol",
+          "volumeNumber": "30"
+        },
+        "sameAs": "https://doi.org/10.1681/ASN.2018080810",
+        "url": "https://doi.org/10.1681/ASN.2018080810"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Gender Differences in Sexual Health Knowledge Among Emerging Adults in Acute-Care Settings",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Burrell CN"
+          },
+          {
+            "@type": "Person",
+            "name": "Sharon MJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Davidov DM"
+          }
+        ],
+        "datePublished": "2019",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "J Am Osteopath Assoc",
+          "volumeNumber": "119"
+        },
+        "sameAs": "https://doi.org/10.7556/jaoa.2019.050",
+        "url": "https://doi.org/10.7556/jaoa.2019.050"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Environmental perfluoroalkyl acid exposures are associated with liver disease characterized by apoptosis and altered serum adipocytokines",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Ducatman A"
+          },
+          {
+            "@type": "Person",
+            "name": "Elliott M"
+          },
+          {
+            "@type": "Person",
+            "name": "Wen S"
+          },
+          {
+            "@type": "Person",
+            "name": "Wahlang B"
+          },
+          {
+            "@type": "Person",
+            "name": "Barnett J"
+          },
+          {
+            "@type": "Person",
+            "name": "Cave MC"
+          }
+        ],
+        "datePublished": "2019",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Environ Pollut",
+          "volumeNumber": "247"
+        },
+        "sameAs": "https://doi.org/10.1016/j.envpol.2019.01.064",
+        "url": "https://doi.org/10.1016/j.envpol.2019.01.064"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Trends in Malware Attacks Against United States Healthcare Organizations, 2016-2017",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Branch L"
+          },
+          {
+            "@type": "Person",
+            "name": "Eller W"
+          },
+          {
+            "@type": "Person",
+            "name": "Bias T"
+          },
+          {
+            "@type": "Person",
+            "name": "McCawley M"
+          },
+          {
+            "@type": "Person",
+            "name": "Myers D"
+          },
+          {
+            "@type": "Person",
+            "name": "Gerber B"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          }
+        ],
+        "datePublished": "2019",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Global Biosecurity",
+          "volumeNumber": "1"
+        },
+        "sameAs": "https://doi.org/10.31646/gbio.7",
+        "url": "https://doi.org/10.31646/gbio.7"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Longitudinal Ultrasound Curriculum Incorporation at West Virginia University School of Medicine: A Description and Graduating Students' Perceptions",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Minardi J"
+          },
+          {
+            "@type": "Person",
+            "name": "Ressetar H"
+          },
+          {
+            "@type": "Person",
+            "name": "Foreman T"
+          },
+          {
+            "@type": "Person",
+            "name": "Craig K"
+          },
+          {
+            "@type": "Person",
+            "name": "Sharon M"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Davis S"
+          },
+          {
+            "@type": "Person",
+            "name": "Machi A"
+          },
+          {
+            "@type": "Person",
+            "name": "Cottrell S"
+          },
+          {
+            "@type": "Person",
+            "name": "Denne N"
+          },
+          {
+            "@type": "Person",
+            "name": "Ferrari N"
+          },
+          {
+            "@type": "Person",
+            "name": "Landreth K"
+          },
+          {
+            "@type": "Person",
+            "name": "Palmer B"
+          },
+          {
+            "@type": "Person",
+            "name": "Schaefer G"
+          },
+          {
+            "@type": "Person",
+            "name": "Tallaksen R"
+          },
+          {
+            "@type": "Person",
+            "name": "Wilks D"
+          },
+          {
+            "@type": "Person",
+            "name": "Williams D"
+          }
+        ],
+        "datePublished": "2019",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "J Ultrasound Med",
+          "volumeNumber": "38"
+        },
+        "sameAs": "https://doi.org/10.1002/jum.14662",
+        "url": "https://doi.org/10.1002/jum.14662"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Project FORESIGHT and Return on Investment: Forensic Science Laboratories and Public Health Laboratories",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Kurimski L"
+          },
+          {
+            "@type": "Person",
+            "name": "Speaker P"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          }
+        ],
+        "datePublished": "2017",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Forensic Science Policy & Management: An International Journal",
+          "volumeNumber": "8"
+        },
+        "sameAs": "https://doi.org/10.1080/19409044.2017.1280099",
+        "url": "https://doi.org/10.1080/19409044.2017.1280099"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Adherence to Guideline Recommended HIV Care in Patients with an Elevated HIV Viral Load is Associated with Improved Rates of Virologic Suppression at One Year",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bagwell KA"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Kay E"
+          },
+          {
+            "@type": "Person",
+            "name": "Goebel MC"
+          },
+          {
+            "@type": "Person",
+            "name": "Bamford L"
+          },
+          {
+            "@type": "Person",
+            "name": "Browne L"
+          },
+          {
+            "@type": "Person",
+            "name": "Christopoulos K"
+          },
+          {
+            "@type": "Person",
+            "name": "Gripshover B"
+          },
+          {
+            "@type": "Person",
+            "name": "Mayer KH"
+          },
+          {
+            "@type": "Person",
+            "name": "Moore R"
+          },
+          {
+            "@type": "Person",
+            "name": "Mugavero MJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Giordano TP"
+          }
+        ],
+        "datePublished": "2026",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infect Dis",
+          "volumeNumber": "13"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofaf695.581",
+        "url": "https://doi.org/10.1093/ofid/ofaf695.581"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Epidemic Preparedness and Vaccine Equity: Access for All",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Redden DT"
+          },
+          {
+            "@type": "Person",
+            "name": "Harris S"
+          },
+          {
+            "@type": "Person",
+            "name": "Erwin PC"
+          },
+          {
+            "@type": "Person",
+            "name": "Daniel CL"
+          }
+        ],
+        "datePublished": "2026",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infect Dis",
+          "volumeNumber": "13"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofaf695.784",
+        "url": "https://doi.org/10.1093/ofid/ofaf695.784"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Neighborhood-level financial exclusion and cancer screening disparities in the US: 2018–2022",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Hussaini SMQ"
+          }
+        ],
+        "datePublished": "2025",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "2025 ASCO Quality Care Symposium, October 2025"
+        },
+        "sameAs": "https://doi.org/10.1200/OP.2025.21.10_suppl.99",
+        "url": "https://doi.org/10.1200/OP.2025.21.10_suppl.99"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 32,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Proximity to Low Barrier Resources for Alabamians Hospitalized With Injection Drug Use",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Gagnon K"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Nassel A"
+          },
+          {
+            "@type": "Person",
+            "name": "Kay ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2024",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Drug and Alcohol Dependence",
+          "volumeNumber": "260"
+        },
+        "sameAs": "https://doi.org/10.1016/j.drugalcdep.2023.110371",
+        "url": "https://doi.org/10.1016/j.drugalcdep.2023.110371"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 33,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Patients with Serious Injection Related Infections (SIRI) have Limited Access to Community-based Infection Prevention and Treatment in Alabama",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bradford W"
+          },
+          {
+            "@type": "Person",
+            "name": "Gagnon K"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2023",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infectious Diseases",
+          "volumeNumber": "10"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofad500.1656",
+        "url": "https://doi.org/10.1093/ofid/ofad500.1656"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 34,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Methamphetamines and Serious Injection Related Infections: Epidemiology and Outcomes of Alabama’s Drug Crisis",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Prados MD"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          },
+          {
+            "@type": "Person",
+            "name": "Levy S"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Gagnon K"
+          },
+          {
+            "@type": "Person",
+            "name": "Jeziorski MM"
+          },
+          {
+            "@type": "Person",
+            "name": "Bradford D"
+          },
+          {
+            "@type": "Person",
+            "name": "Leisch LJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Li L"
+          }
+        ],
+        "datePublished": "2022",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infectious Diseases",
+          "volumeNumber": "9"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofac492.1239",
+        "url": "https://doi.org/10.1093/ofid/ofac492.1239"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 35,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "HIV, Opioid Use Disorder, and Injection related Infections: Clinical Outcomes in 4 Academic Hospitals",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Akselrod A"
+          },
+          {
+            "@type": "Person",
+            "name": "Burkholder GA"
+          },
+          {
+            "@type": "Person",
+            "name": "Rosenthal ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Brokus CJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Catalanotti JS"
+          },
+          {
+            "@type": "Person",
+            "name": "Kou I"
+          },
+          {
+            "@type": "Person",
+            "name": "McGonigle K"
+          },
+          {
+            "@type": "Person",
+            "name": "Mai W"
+          },
+          {
+            "@type": "Person",
+            "name": "Notis M"
+          },
+          {
+            "@type": "Person",
+            "name": "Burgan KW"
+          },
+          {
+            "@type": "Person",
+            "name": "Carpenter J"
+          },
+          {
+            "@type": "Person",
+            "name": "Steck A"
+          },
+          {
+            "@type": "Person",
+            "name": "Eaton E"
+          }
+        ],
+        "datePublished": "2021",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infectious Diseases",
+          "volumeNumber": "8"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofab466.1062",
+        "url": "https://doi.org/10.1093/ofid/ofab466.1062"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 36,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "Partnering with State Health Departments: A Road Map for Collaboration Using Public Health Enhanced HIV/AIDS Reporting System (eHARS)",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          },
+          {
+            "@type": "Person",
+            "name": "Levitan EB"
+          },
+          {
+            "@type": "Person",
+            "name": "Ostrenga L"
+          },
+          {
+            "@type": "Person",
+            "name": "Crear DC"
+          },
+          {
+            "@type": "Person",
+            "name": "Johnson KL"
+          },
+          {
+            "@type": "Person",
+            "name": "Cooper G"
+          },
+          {
+            "@type": "Person",
+            "name": "Kay ES"
+          },
+          {
+            "@type": "Person",
+            "name": "Parman M"
+          },
+          {
+            "@type": "Person",
+            "name": "Nassel A"
+          },
+          {
+            "@type": "Person",
+            "name": "Mugavero MJ"
+          },
+          {
+            "@type": "Person",
+            "name": "Batey DS"
+          },
+          {
+            "@type": "Person",
+            "name": "Rana A"
+          }
+        ],
+        "datePublished": "2020",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Open Forum Infectious Diseases",
+          "volumeNumber": "7"
+        },
+        "sameAs": "https://doi.org/10.1093/ofid/ofaa439.1151",
+        "url": "https://doi.org/10.1093/ofid/ofaa439.1151"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 37,
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": "373 Concussions in the Emergency Department: A Retrospective Analysis of Clinical Decision Guidelines Utilization",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Lasure B"
+          },
+          {
+            "@type": "Person",
+            "name": "Vucelik A"
+          },
+          {
+            "@type": "Person",
+            "name": "Hegsted D"
+          },
+          {
+            "@type": "Person",
+            "name": "Sharon M"
+          },
+          {
+            "@type": "Person",
+            "name": "Tillotson R"
+          },
+          {
+            "@type": "Person",
+            "name": "Monseau A"
+          },
+          {
+            "@type": "Person",
+            "name": "Balcik B"
+          },
+          {
+            "@type": "Person",
+            "name": "Bassler JR"
+          }
+        ],
+        "datePublished": "2017",
+        "isPartOf": {
+          "@type": "Periodical",
+          "name": "Annals of Emergency Medicine",
+          "volumeNumber": "70"
+        },
+        "sameAs": "https://doi.org/10.1016/j.annemergmed.2017.07.343",
+        "url": "https://doi.org/10.1016/j.annemergmed.2017.07.343"
+      }
+    }
+  ]
+}
+</script>
+```
+
 
 <div class="section-note">Citation counts below are fetched live each time this page loads, matched by DOI — primarily from <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a>, falling back to <a href="https://www.crossref.org" target="_blank">Crossref</a> when Semantic Scholar's public API is unavailable. Both undercount relative to Google Scholar (which also counts preprints, theses, and other sources); treat these as directional, not exhaustive. Click a count to see its source. <strong>If a count doesn't load, refresh the page</strong> — the lookup runs client-side and can occasionally be rate-limited. The colored bar next to each entry is an <a href="https://www.altmetric.com" target="_blank">Altmetric</a> attention score (news, policy, and social media mentions) — a gray/empty bar just means Altmetric hasn't tracked any attention for that item yet, not an error. Click <strong>Copy BibTeX</strong> on any entry to copy a ready-to-paste citation.</div>
 
@@ -1030,5 +3137,60 @@ Yates DB, Bhalla S, **Bassler JR**, Wroe WW, Khazaal JR, Goutnik MA, Batey DS, B
       window.prompt("Copy this BibTeX entry:", text);
     }
   });
+})();
+</script>
+
+<!-- Publications search/filter box: a single text input that narrows
+     the list to entries whose title/author/journal/year text matches
+     every word typed (a simple client-side AND-of-substrings match,
+     no backend needed for ~40 entries). Whole ## sections (Peer-
+     reviewed, Conference abstracts, In preparation) collapse away if
+     none of their entries match, so the page never shows an empty
+     section heading. -->
+<script>
+(function () {
+  var input = document.getElementById("pub-search-input");
+  var countEl = document.getElementById("pub-search-count");
+  var noResultsEl = document.getElementById("pub-no-results");
+  if (!input) return;
+
+  var entries = Array.prototype.slice.call(document.querySelectorAll(".pub-entry")).map(function (el) {
+    return { el: el, text: el.textContent.toLowerCase() };
+  });
+  var sections = Array.prototype.slice.call(document.querySelectorAll("section.level2"));
+  var total = entries.length;
+
+  function applyFilter() {
+    var raw = input.value.trim().toLowerCase();
+    var words = raw.length ? raw.split(/\s+/) : [];
+    var visibleCount = 0;
+
+    entries.forEach(function (entry) {
+      var matches = words.every(function (w) { return entry.text.indexOf(w) !== -1; });
+      entry.el.classList.toggle("pub-hidden", !matches);
+      if (matches) visibleCount++;
+    });
+
+    // Hide a whole section (its heading + intro note included, since
+    // both live inside the same <section class="level2"> wrapper)
+    // when every entry inside it has been filtered out.
+    sections.forEach(function (section) {
+      var sectionEntries = section.querySelectorAll(".pub-entry");
+      if (!sectionEntries.length) return; // not a publications section
+      var anyVisible = Array.prototype.some.call(sectionEntries, function (el) {
+        return !el.classList.contains("pub-hidden");
+      });
+      section.classList.toggle("pub-hidden", !anyVisible);
+    });
+
+    if (countEl) {
+      countEl.textContent = raw.length ? visibleCount + " of " + total + " publications shown" : "";
+    }
+    if (noResultsEl) {
+      noResultsEl.hidden = visibleCount !== 0 || !raw.length;
+    }
+  }
+
+  input.addEventListener("input", applyFilter);
 })();
 </script>
