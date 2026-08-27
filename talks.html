@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>talks – John R. Bassler</title>
+<title>Talks &amp; Presentations – John R. Bassler</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -325,17 +325,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Talks &amp; Presentations</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <p>Invited and contributed talks, posters, and conference presentations. Listed newest first.</p>
 <section id="where-ive-presented" class="level2">
 <h2 class="anchored" data-anchor-id="where-ive-presented">Where I’ve Presented</h2>
 <div class="section-note">
-Locations of conference talks and invited presentations below, sized by number of talks given at that location. Click a marker for details. (Four additional presentations were held virtually and aren’t tied to a physical location: two Alabama Department of Public Health seminar talks, IDWeek 2021, and IDWeek 2020 — see the full list below.)
+Locations of conference talks and invited presentations below, sized by number of talks given at that location. Click a marker for details. (Five additional presentations were held virtually and aren’t tied to a physical location: two Alabama Department of Public Health seminar talks, AIDS 2022, IDWeek 2021, and IDWeek 2020 — see the full list below.)
 </div>
 <div id="talks-map">
 
@@ -379,23 +395,20 @@ Locations of conference talks and invited presentations below, sized by number o
     ]},
     { city: "Seattle, WA", lat: 47.6062, lng: -122.3321, count: 1, items: [
       "CROI — 2023"
-    ]},
-    { city: "Montreal, Canada", lat: 45.5017, lng: -73.5673, count: 1, items: [
-      "AIDS 2022 — 2022"
     ]}
   ];
- 
+
   function initTalksMap() {
     var mapDiv = document.getElementById("talks-map");
     if (!mapDiv || typeof L === "undefined") return;
- 
+
     var map = L.map("talks-map", { scrollWheelZoom: false });
- 
+
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 18,
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
- 
+
     var markers = [];
     talkLocations.forEach(function (loc) {
       var radius = 7 + loc.count * 2.5;
@@ -406,7 +419,7 @@ Locations of conference talks and invited presentations below, sized by number o
         fillColor: "#7a1f2b",
         fillOpacity: 0.55
       }).addTo(map);
- 
+
       var popupHtml = "<strong>" + loc.city + "</strong> (" + loc.count +
         (loc.count === 1 ? " talk" : " talks") +
         ')<ul style="margin:0.4rem 0 0; padding-left:1.1rem;">';
@@ -417,11 +430,11 @@ Locations of conference talks and invited presentations below, sized by number o
       marker.bindPopup(popupHtml);
       markers.push(marker);
     });
- 
+
     var group = L.featureGroup(markers);
     map.fitBounds(group.getBounds().pad(0.25));
   }
- 
+
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initTalksMap);
   } else {
@@ -435,26 +448,26 @@ Locations of conference talks and invited presentations below, sized by number o
 <!--
   To attach materials to any presentation below, add a line right after
   its citation text, before the closing ":::". Two cases:
- 
+
   1) A hard file you're hosting yourself (poster PDF, slides, etc.) —
      use {download=""} so it forces a browser download instead of
      opening in a new tab:
- 
+
      <div class="talk-links">[Download poster (PDF)](files/posters/some-file.pdf){download=""}</div>
- 
+
      PDF files go in files/posters/.
- 
+
   2) A public web page you don't control and can't download (an ArcGIS
      StoryMap, a dashboard, an external repository) — use
      {target="_blank"} so it opens in a new tab instead, same as links
      elsewhere on the site:
- 
+
      <div class="talk-links">[View StoryMap](https://storymaps.arcgis.com/stories/some-id){target="_blank"}</div>
- 
+
   Multiple items on one entry can be separated with " · ", same as the
   Publications page's DOI/PubMed links — mixing both types on one line
   is fine, e.g.:
- 
+
   <div class="talk-links">[Download poster (PDF)](files/posters/some-file.pdf){download=""} · [View StoryMap](https://storymaps.arcgis.com/stories/some-id){target="_blank"}</div>
 -->
 <div class="talk-entry">
@@ -560,7 +573,7 @@ Locations of conference talks and invited presentations below, sized by number o
 </div>
 </div>
 <div class="talk-entry">
-<p><strong>Bassler JR</strong>, Levitan EB, Nassel A, Ostrenga L, Cagle I, Preg S, Bender M, Wang X, Kay ES, Parman M, Mugavero MJ, Batey DS, Rana A. Impact of the COVID-19 Pandemic on Time to HIV Viral Suppression in the U.S. Deep South [Poster Presentation]. In: AIDS 2022; 29 July 2022 – 02 August 2022; Montreal, Canada. (Contributed)</p>
+<p><strong>Bassler JR</strong>, Levitan EB, Nassel A, Ostrenga L, Cagle I, Preg S, Bender M, Wang X, Kay ES, Parman M, Mugavero MJ, Batey DS, Rana A. Impact of the COVID-19 Pandemic on Time to HIV Viral Suppression in the U.S. Deep South [Poster Presentation]. In: AIDS 2022; 29 July 2022 – 02 August 2022; Virtual. (Contributed)</p>
 <div class="talk-links">
 <a href="files/posters/AIDS2022_Bassler_COVID_poster.pdf" download="">Download poster (PDF)</a>
 </div>
