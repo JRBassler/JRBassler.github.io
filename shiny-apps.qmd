@@ -22,12 +22,22 @@ Selected and publicly available R Shiny applications and related dashboards used
 -->
 
 ::: {.app-entry}
-<img src="files/DG-shiny.png" alt="Screenshot of the Epidemic Preparedness and Vaccine Equity map supplement" class="app-thumb">
+<img src="files/SPARTO-shiny.png" alt="Screenshot of the SPARTO-Choropleths dashboard" class="app-thumb">
 
 <div class="app-text">
-**Epidemic Preparedness and Vaccine Equity: Access for All** — map supplement exploring vaccine access and epidemic preparedness.
+**SPARTO-Choropleths** — open-access dashboard for geographic visualization of HIV care continuum outcomes.
 
-<div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
+<div class="app-links">[Open app](#){.app-link-pending}</div>
+</div>
+:::
+
+::: {.app-entry}
+<img src="files/app-financial-exclusion.png" alt="Screenshot of the Neighborhood-Level Financial Exclusion and Cancer Screening Disparities dashboard" class="app-thumb">
+
+<div class="app-text">
+**Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022** — web-based dashboard depicting choropleths illustrating the temporal and geographic variability of home loan denial rates and cancer screening rates (colorectal, breast, and cervical) by U.S. census tract.
+
+<div class="app-links">[Open dashboard](https://arcg.is/1bnK4K){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/WC598){target="_blank"}</div>
 </div>
 :::
 
@@ -38,6 +48,16 @@ Selected and publicly available R Shiny applications and related dashboards used
 **Geographic Variability in Time from HIV Diagnosis to Viral Suppression in the Deep South** — map supplement to the geospatial analysis of HIV testing coverage across the Southeast.
 
 <div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/QZG94){target="_blank"}</div>
+</div>
+:::
+
+::: {.app-entry}
+<img src="files/DG-shiny.png" alt="Screenshot of the Epidemic Preparedness and Vaccine Equity map supplement" class="app-thumb">
+
+<div class="app-text">
+**Epidemic Preparedness and Vaccine Equity: Access for All** — map supplement exploring vaccine access and epidemic preparedness.
+
+<div class="app-links">[Open app](#){.app-link-pending} · [OSF repository](https://doi.org/10.17605/OSF.IO/FBGEC){target="_blank"}</div>
 </div>
 :::
 
@@ -61,25 +81,6 @@ Selected and publicly available R Shiny applications and related dashboards used
 </div>
 :::
 
-::: {.app-entry}
-<img src="files/app-financial-exclusion.png" alt="Screenshot of the Neighborhood-Level Financial Exclusion and Cancer Screening Disparities dashboard" class="app-thumb">
-
-<div class="app-text">
-**Neighborhood-Level Financial Exclusion and Cancer Screening Disparities in the U.S., 2017–2022** — web-based dashboard depicting choropleths illustrating the temporal and geographic variability of home loan denial rates and cancer screening rates (colorectal, breast, and cervical) by U.S. census tract.
-
-<div class="app-links">[Open app](https://arcg.is/1bnK4K){target="_blank"} · [OSF repository](https://doi.org/10.17605/OSF.IO/WC598){target="_blank"}</div>
-</div>
-:::
-
-::: {.app-entry}
-<img src="files/SPARTO-shiny.png" alt="Screenshot of the SPARTO-Choropleths dashboard" class="app-thumb">
-
-<div class="app-text">
-**SPARTO-Choropleths** — open-access dashboard for geographic visualization of HIV care continuum outcomes.
-
-<div class="app-links">[Open app](#){.app-link-pending}</div>
-</div>
-:::
 
 <script>
 (function () {
