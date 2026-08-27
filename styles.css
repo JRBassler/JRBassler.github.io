@@ -126,6 +126,32 @@ a:hover {
                                                 reads as a "panel" too */
 }
 
+/* ---- Teaching page: generative Lorenz-attractor banner ----
+   A pure decorative banner (no text on top, same role as .banner-img
+   on the homepage) rendered by teaching.qmd's own <canvas> script —
+   see the JS at the end of that file. Given a fixed dark backdrop
+   regardless of the site's light/dark mode, same as the homepage's
+   banner-img photo isn't re-colored between modes either: this is
+   decorative art, not themed UI chrome, so it doesn't need a
+   [data-bs-theme]/.quarto-dark counterpart for its own colors — only
+   its outer edge treatment (box-shadow vs. border) follows the rest
+   of the site's dark-mode card pattern, added further down. */
+.teaching-hero {
+  width: 100%;
+  height: clamp(160px, 22vw, 240px);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  background: #1b1a18;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+#lorenz-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 /* ---- Hero / about block on the homepage ----
    Structure (see index.qmd): a .hero flex row containing the
    headshot image and a .hero-text column with the name, title, and
@@ -621,6 +647,11 @@ embed[type="application/pdf"] {
 .quarto-dark embed[type="application/pdf"] {
   box-shadow: none !important;
   border: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+.quarto-dark .teaching-hero {
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 /* Presentations page map: OpenStreetMap tiles are a fixed light
