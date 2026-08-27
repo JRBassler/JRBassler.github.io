@@ -492,3 +492,150 @@ embed[type="application/pdf"] {
 #talks-map .leaflet-popup-content strong {
   color: #7a1f2b;
 }
+
+/* ============================================================
+   Dark mode overrides
+   ------------------------------------------------------------
+   _quarto.yml pairs the "cosmo" light theme with Bootstrap's
+   "darkly" theme and lets Quarto generate the toggle automatically
+   (top-right of the navbar). Quarto marks the <body> with the class
+   .quarto-dark when dark mode is active (and .quarto-light
+   otherwise) — see https://quarto.org/docs/output-formats/html-themes.html.
+   That switch alone repaints every stock Bootstrap element (footer,
+   default buttons, etc.) correctly, since those pull their colors
+   from Bootstrap variables that "darkly" redefines.
+
+   It does NOT touch anything hardcoded above in this file — the warm
+   off-white page background, the white "cards," the maroon accent, or
+   any of the specific muted-gray text shades — since those are literal
+   hex values, several behind !important. Each one needs an explicit
+   dark counterpart here. Selectors are listed in the same order as
+   their light-mode originals above so the two are easy to compare.
+   ============================================================ */
+
+.quarto-dark {
+  color: #e8e5e0;
+  background-color: #1b1a18;
+}
+
+.quarto-dark .navbar {
+  background-color: #221f1c !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+
+.quarto-dark h3 {
+  color: #b5b0a8;
+}
+
+.quarto-dark a {
+  color: #d9808c;
+}
+
+.quarto-dark .btn-outline-primary {
+  color: #d9808c !important;
+  border-color: #d9808c !important;
+}
+
+.quarto-dark .btn-outline-primary:hover {
+  background-color: #d9808c !important;
+  border-color: #d9808c !important;
+  color: #1b1a18 !important;
+}
+
+/* The site's "card" surfaces (hero, about-section watermark card,
+   Research/Education, and every pub/talk/app entry) all share the
+   same white-card-on-light-page treatment in light mode, so they
+   share the same dark-card treatment here too. A subtle light border
+   replaces the box-shadow, since a shadow tinted rgba(0,0,0,...)
+   barely shows up against an already-dark page background. */
+.quarto-dark .hero,
+.quarto-dark .about-section,
+.quarto-dark #research-interests,
+.quarto-dark #education,
+.quarto-dark .pub-entry,
+.quarto-dark .talk-entry,
+.quarto-dark .app-entry {
+  background: #262420;
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.quarto-dark .hero .subtitle {
+  color: #b5b0a8;
+}
+
+.quarto-dark .hero .affiliation {
+  color: #a19c93;
+}
+
+.quarto-dark .about-section::before {
+  opacity: 0.35;
+  filter: brightness(0.85);
+}
+
+.quarto-dark .pub-year,
+.quarto-dark .talk-year {
+  color: #8a857e;
+}
+
+.quarto-dark .citation-badge,
+.quarto-dark .citation-badge a,
+.quarto-dark .in-prep {
+  color: #94908a;
+}
+
+.quarto-dark .bibtex-copy-btn {
+  color: #d9808c;
+  background: #262420;
+  border: 1px solid #d9808c;
+}
+
+.quarto-dark .bibtex-copy-btn:hover {
+  background: #d9808c;
+  color: #1b1a18;
+}
+
+.quarto-dark .section-note {
+  color: #a19c93;
+}
+
+.quarto-dark .app-link-pending,
+.quarto-dark .materials-pending {
+  color: #7d7972;
+}
+
+.quarto-dark embed[type="application/pdf"] {
+  box-shadow: none !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+/* Presentations page map: OpenStreetMap tiles are a fixed light
+   basemap image, so they're dimmed rather than recolored to keep
+   them from glaring against the dark page. Leaflet's own white UI
+   chrome (zoom buttons, attribution strip, popups) gets restyled to
+   match, and the popup heading picks up the same lightened accent
+   used everywhere else in dark mode. */
+.quarto-dark #talks-map {
+  box-shadow: none;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.quarto-dark #talks-map .leaflet-tile-pane {
+  filter: brightness(0.75) saturate(0.9);
+}
+
+.quarto-dark #talks-map .leaflet-bar a,
+.quarto-dark #talks-map .leaflet-control-attribution,
+.quarto-dark #talks-map .leaflet-popup-content-wrapper,
+.quarto-dark #talks-map .leaflet-popup-tip {
+  background: #262420;
+  color: #e8e5e0;
+}
+
+.quarto-dark #talks-map .leaflet-control-attribution a {
+  color: #d9808c;
+}
+
+.quarto-dark #talks-map .leaflet-popup-content strong {
+  color: #d9808c;
+}
