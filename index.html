@@ -345,14 +345,18 @@ University of Alabama at Birmingham · Center for AIDS Research (CFAR)
 </section>
 </div>
 <div class="about-section">
+<div id="about-particles">
+
+</div>
 <section id="about" class="level2">
 <h2 class="anchored" data-anchor-id="about">About</h2>
-<p>Drawing on extensive analytical experience within academic research settings, I leverage spatial and survival statistical methods to drive public health initiatives. I am specifically focused on addressing HIV and oncology disparities throughout Alabama and the Deep South.</p>
-<p>I currently serve as Clinical Database Manager II in UAB’s <a href="https://www.uab.edu/medicine/cfar/">Center for AIDS Research (CFAR)</a>, and I am completing my Doctor of Public Health (DrPH) in Biostatistics at UAB (defended: July 2026, graduation: December 2026), with a dissertation on shared frailty models for spatial data applied to time to HIV viral suppression. My work sits at the intersection of time-to-event analysis, spatial and Bayesian statistical methods, and structural determinants of health outcomes, including a <a href="https://doi.org/10.1001/jamainternmed.2024.5003">study on historical redlining and delays in HIV treatment</a>.</p>
+<p>As an experienced statistician, I’ve honed my skills in higher education, contributing to research and analytical initiatives. I apply advanced spatial and survival statistical methods to public health challenges, with a focus on HIV care outcomes across Alabama and the Deep South.</p>
+<p>I currently serve as Clinical Database Manager II with the UAB Center for AIDS Research (CFAR), and I am completing my Doctor of Public Health (DrPH) in Biostatistics at UAB, with a dissertation on shared frailty models for spatial data applied to time to HIV viral suppression. My work sits at the intersection of survival analysis, spatial and Bayesian statistical methods, and structural determinants of HIV care outcomes — including a <a href="https://doi.org/10.1001/jamainternmed.2024.5003">study on historical redlining and delays in HIV treatment</a> that has been covered in the <a href="./press.html">national press</a>.</p>
 </section>
+</div>
 <section id="research-interests" class="level2">
 <h2 class="anchored" data-anchor-id="research-interests">Research interests</h2>
-<p>Time-to-event / survival analysis · Frailty models · Spatial and Bayesian spatial modeling · HIV/AIDS and infectious disease · Oncology · Substance Abuse · Environmental health · Health Policy · Structural determinants of health</p>
+<p>Time-to-event / survival analysis · Frailty models · Spatial and Bayesian spatial modeling · HIV/AIDS and infectious disease · Substance Abuse · Environmental health · Health Policy · Structural determinants of health</p>
 </section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
@@ -362,13 +366,107 @@ Committee Chair: Dr.&nbsp;Jeff M. Szychowski<br>
 Committee Members: Dr.&nbsp;Dustin M. Long, Dr.&nbsp;Emily Levitan, Dr.&nbsp;Aadia Rana, Dr.&nbsp;D. Scott Batey, Dr.&nbsp;David T. Redden, Dr.&nbsp;Stacey S. Cofield</p>
 <p><strong>Master of Science (MS), Biostatistics</strong> — West Virginia University, May 2017</p>
 <p><strong>Bachelor of Science (BSc), Mathematics</strong> — West Virginia University, December 2013</p>
-<p><strong>Bachelor of Science (BSc), Industrial Mathematics and Statistics</strong> — West Virginia University, December 2013<br>
-<em>Minor: Communication Studies</em></p>
+<p><strong>Bachelor of Science (BSc), Industrial Mathematics and Statistics</strong> — West Virginia University, December 2013 <em>Minor: Communication Studies</em></p>
 <p>See the full <a href="./cv.html">CV</a> for professional experience, grant support, teaching, service, and honors.</p>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@4/tsparticles.slim.bundle.min.js"></script>
+<script>
+(function () {
+  var container = document.getElementById("about-particles");
+  if (!container) return;
+
+  // Respect the visitor's OS/browser motion preference — if they've
+  // asked for reduced motion, skip the animated layer entirely and
+  // leave just the static watermark image already behind the text.
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    return;
+  }
+  if (typeof tsParticles === "undefined" || typeof loadSlim === "undefined") return;
+
+  var engineReady = loadSlim(tsParticles);
+
+  // A soft, low-opacity "constellation" that drifts on its own and
+  // gently links up wherever the cursor hovers over the card — kept
+  // subtle since it sits directly behind the About paragraph text.
+  // Colors swap to the site's dark-mode accent when the visitor
+  // toggles dark mode (see the toggle listener below).
+  function particleColors() {
+    var dark = document.body.classList.contains("quarto-dark");
+    // Light mode's card background is a very pale off-white/cream (the
+    // topo watermark image), so the maroon site accent — already dark
+    // and saturated enough to read clearly on its own as link text —
+    // is used here too, at a bit more opacity than the dark-mode dot
+    // color needs, since the dark-mode pink already has plenty of
+    // contrast against the near-black card at a lower opacity.
+    return dark
+      ? { dot: "#d9808c", link: "#a19c93", dotOpacity: 0.35, linkOpacity: 0.25 }
+      : { dot: "#7a1f2b", link: "#7a1f2b", dotOpacity: 0.5, linkOpacity: 0.2 };
+  }
+
+  function buildOptions() {
+    var c = particleColors();
+    return {
+      fullScreen: { enable: false },
+      background: { color: "transparent" },
+      fpsLimit: 60,
+      pauseOnBlur: true,
+      pauseOnOutsideViewport: true,
+      particles: {
+        number: { value: 40 },
+        color: { value: c.dot },
+        opacity: { value: c.dotOpacity },
+        size: { value: { min: 1, max: 3 } },
+        links: {
+          enable: true,
+          color: c.link,
+          distance: 130,
+          opacity: c.linkOpacity,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 0.6,
+          outModes: { default: "bounce" }
+        }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "grab" },
+          onClick: { enable: false },
+          resize: true
+        },
+        modes: {
+          grab: { distance: 140, links: { opacity: 0.45 } }
+        }
+      },
+      responsive: [
+        { maxWidth: 600, options: { particles: { number: { value: 18 } } } }
+      ]
+    };
+  }
+
+  function initParticles() {
+    engineReady.then(function () {
+      // Loading again with the same id replaces the previous instance
+      // in place, so this doubles as the dark-mode re-color step below.
+      tsParticles.load({ id: "about-particles", options: buildOptions() });
+    });
+  }
+
+  initParticles();
+
+  var toggle = document.querySelector(".quarto-color-scheme-toggle");
+  if (toggle) {
+    toggle.addEventListener("click", function () {
+      // Small delay so document.body already has the new
+      // .quarto-dark/.quarto-light class by the time we re-read it.
+      setTimeout(initParticles, 60);
+    });
+  }
+})();
+</script>
 
 
 </section>
-</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
