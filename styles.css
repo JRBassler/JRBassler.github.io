@@ -131,11 +131,13 @@ a:hover {
    headshot image and a .hero-text column with the name, title, and
    affiliation.
 
-   The Teaching page's own hero (see teaching.qmd) reuses this exact
-   card/flex treatment for its Lorenz-attractor visual + intro blurb,
-   so it's grouped into the same selectors rather than duplicated. */
+   The Teaching and Shiny Apps pages' own heroes (see teaching.qmd and
+   shiny-apps.qmd) reuse this exact card/flex treatment for their own
+   generative-canvas visual + intro blurb, so they're grouped into the
+   same selectors rather than duplicated. */
 .hero,
-.teaching-hero {
+.teaching-hero,
+.shiny-hero {
   display: flex;
   flex-direction: row;
   align-items: center;   /* vertically center the headshot against
@@ -150,21 +152,24 @@ a:hover {
 }
 
 .hero-text,
-.teaching-hero-text {
+.teaching-hero-text,
+.shiny-hero-text {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;   /* small gap between name / subtitle / affiliation */
   flex: 1;        /* take up remaining width next to the headshot/visual */
 }
 
-/* Teaching page: generative Lorenz-attractor visual, playing the same
-   role .headshot plays in the homepage hero — a fixed-size decorative
-   box beside the intro text. Rendered by teaching.qmd's own <canvas>
-   script (see the JS at the end of that file). Kept at a fixed dark
-   backdrop regardless of the site's light/dark mode, same as the
-   homepage's banner-img photo isn't re-colored between modes either:
-   this is decorative art, not themed UI chrome. */
-.teaching-hero-visual {
+/* Teaching and Shiny Apps pages: generative canvas visuals, playing
+   the same role .headshot plays in the homepage hero — a fixed-size
+   decorative box beside the intro text. Each is rendered by its own
+   page's <canvas> script (see the JS at the end of teaching.qmd and
+   shiny-apps.qmd). Kept at a fixed dark backdrop regardless of the
+   site's light/dark mode, same as the homepage's banner-img photo
+   isn't re-colored between modes either: this is decorative art, not
+   themed UI chrome. */
+.teaching-hero-visual,
+.shiny-hero-visual {
   width: 260px;
   height: 190px;
   flex-shrink: 0;
@@ -173,7 +178,8 @@ a:hover {
   background: #1b1a18;
 }
 
-#lorenz-canvas {
+#lorenz-canvas,
+#topo-canvas {
   display: block;
   width: 100%;
   height: 100%;
@@ -217,11 +223,13 @@ a:hover {
    instead of side-by-side, since there isn't room for a row. */
 @media (max-width: 600px) {
   .hero,
-  .teaching-hero {
+  .teaching-hero,
+  .shiny-hero {
     flex-direction: column;
     align-items: flex-start;
   }
-  .teaching-hero-visual {
+  .teaching-hero-visual,
+  .shiny-hero-visual {
     width: 100%;
     height: 160px;
   }
@@ -597,6 +605,7 @@ embed[type="application/pdf"] {
    barely shows up against an already-dark page background. */
 .quarto-dark .hero,
 .quarto-dark .teaching-hero,
+.quarto-dark .shiny-hero,
 .quarto-dark .about-section,
 .quarto-dark #research-interests,
 .quarto-dark #education,
