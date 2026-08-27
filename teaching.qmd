@@ -2,74 +2,193 @@
 title: "Teaching"
 ---
 
-Whether in a meeting with an investigator or in the classroom, teaching and explaining statistical concepts is an exercise in translation. My goal is to make statistical techniques accessible and respect the experiences of those I am working with. Whether leading a course, guest lecturing, or working one-on-one as a TA, I try to keep the material grounded in applied public health problems that can help facilitate the connection between the statistical method and the people and problems it's meant to serve.
+<div class="teaching-hero">
+<canvas id="lorenz-canvas" aria-hidden="true"></canvas>
+</div>
 
-Courses taught, guest lectures, and teaching assistantships. Organized by role, institution/department, and semester.
- 
+I approach teaching biostatistics as translation work — taking rigorous methods and making them usable by students who arrive with very different quantitative backgrounds, from undergraduate honors students to graduate students in biostatistics, epidemiology, and nursing. Whether leading a course, guest lecturing, or working one-on-one as a TA, I try to keep the material grounded in the applied public health problems — HIV care outcomes, health equity, structural determinants of health — that drew me to it in the first place.
+
+[**Read my full teaching statement (PDF)**](files/teaching/Bassler_Teaching_Statement.pdf){.btn .btn-outline-primary target="_blank"}
+
 ## Teaching Experience
- 
+
+Courses taught, guest lectures, and teaching assistantships. Organized by role, then institution/department.
+
 <!--
   Each entry below is a .talk-entry card, same style used on the
   Presentations page, grouped under ### role headings. A typical
   entry looks like:
- 
+
   ::: {.talk-entry}
   **Institution Name**, Department
- 
+
   Graduate: *Course Title* — Term
   Undergraduate: *Course Title* — Term
   :::
- 
+
   (Note the two trailing spaces at the end of each course line above
   before the line break — that's a Markdown hard break, needed so
   multiple courses at the same institution each land on their own
   line instead of running together.)
- 
+
   To attach materials (a syllabus, slides, etc.) to an entry, add a
   line right after the course list, before the closing ":::" — same
   {download=""} / {target="_blank"} conventions as the Presentations
   page:
- 
+
   <div class="talk-links">[Syllabus (PDF)](files/teaching/some-file.pdf){download=""}</div>
- 
+
   Materials go in files/teaching/.
 -->
- 
+
 ### Adjunct Instructor & Course Designer
- 
+
 ::: {.talk-entry}
 **Spring Hill College**, Division of Nursing
- 
+
 Graduate: *Foundations in Biostatistics* — Spring 2024
 :::
- 
+
 ### Guest Lecturer
- 
+
 ::: {.talk-entry}
 **University of Alabama at Birmingham**, Department of Biostatistics
- 
+
 Graduate: *Estimation and Inference* — Fall 2020  
 Undergraduate: *Biostatistics Honors* — Fall 2019
 :::
- 
+
 ::: {.talk-entry}
 **University of Alabama at Birmingham**, Department of Epidemiology
- 
+
 Graduate: *Analysis of Follow-Up Studies* — Summer 2024
 :::
- 
+
 ### Teaching Assistant
- 
+
 ::: {.talk-entry}
 **University of Alabama at Birmingham**, Department of Biostatistics
- 
+
 Graduate: *Statistical Methods I* — Fall 2023  
 Graduate: *SAS Data Management and Reporting with SAS* — Fall 2019
 :::
- 
+
 ::: {.talk-entry}
 **West Virginia University**, Department of Biostatistics
- 
+
 Graduate: *Categorical Data Analysis* — Spring 2017  
 Graduate: *Data Management and Reporting* — Fall 2016
 :::
+
+<script>
+(function () {
+  var canvas = document.getElementById("lorenz-canvas");
+  if (!canvas || !canvas.getContext) return;
+  var ctx = canvas.getContext("2d");
+
+  // ---- 1. Generate the attractor's trajectory once, up front ----
+  // The Lorenz system: a simple set of three coupled equations that
+  // produces the classic "butterfly" chaotic attractor. Integrated
+  // here with 4th-order Runge-Kutta (RK4) for a smooth curve — no
+  // charting/animation library needed, it's just arithmetic.
+  var sigma = 10, rho = 28, beta = 8 / 3;
+  function derivatives(x, y, z) {
+    return [sigma * (y - x), x * (rho - z) - y, x * y - beta * z];
+  }
+
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var dt = 0.008;
+  var steps = reduceMotion ? 6000 : 9000; // fewer points needed for a single static frame
+  var burnIn = 200; // discard the initial approach from the arbitrary start point
+
+  var x = 0.1, y = 0, z = 0;
+  var points = [];
+  for (var i = 0; i < steps; i++) {
+    var k1 = derivatives(x, y, z);
+    var k2 = derivatives(x + dt / 2 * k1[0], y + dt / 2 * k1[1], z + dt / 2 * k1[2]);
+    var k3 = derivatives(x + dt / 2 * k2[0], y + dt / 2 * k2[1], z + dt / 2 * k2[2]);
+    var k4 = derivatives(x + dt * k3[0], y + dt * k3[1], z + dt * k3[2]);
+    x += dt / 6 * (k1[0] + 2 * k2[0] + 2 * k3[0] + k4[0]);
+    y += dt / 6 * (k1[1] + 2 * k2[1] + 2 * k3[1] + k4[1]);
+    z += dt / 6 * (k1[2] + 2 * k2[2] + 2 * k3[2] + k4[2]);
+    if (i >= burnIn) points.push([x, y, z]);
+  }
+
+  // Normalize so the trajectory fills the canvas regardless of the
+  // exact shape these particular parameters/starting point produce.
+  var minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity, minZ = Infinity, maxZ = -Infinity;
+  points.forEach(function (p) {
+    if (p[0] < minX) minX = p[0]; if (p[0] > maxX) maxX = p[0];
+    if (p[1] < minY) minY = p[1]; if (p[1] > maxY) maxY = p[1];
+    if (p[2] < minZ) minZ = p[2]; if (p[2] > maxZ) maxZ = p[2];
+  });
+  var midX = (minX + maxX) / 2, midY = (minY + maxY) / 2, midZ = (minZ + maxZ) / 2;
+  var span = Math.max(maxX - minX, maxY - minY, maxZ - minZ) || 1;
+  points = points.map(function (p) {
+    return [p[0] - midX, p[1] - midY, p[2] - midZ];
+  });
+
+  // Warm color sweep across the trajectory (drawn as a handful of
+  // solid-color bands rather than a per-point gradient, so each
+  // animation frame only needs a few stroke() calls, not thousands).
+  var bandColors = ["#c9a227", "#b8860b", "#7a1f2b", "#9c3a4a", "#d9808c", "#e8a0ac"];
+  var bandCount = bandColors.length;
+  var bandSize = Math.ceil(points.length / bandCount);
+
+  // ---- 2. Render: rotate the point cloud a little each frame and redraw ----
+  function resize() {
+    var rect = canvas.parentElement.getBoundingClientRect();
+    var dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    return { w: rect.width, h: rect.height };
+  }
+
+  var size = resize();
+  var angle = 0.6; // starting rotation, purely aesthetic
+
+  function draw() {
+    var w = size.w, h = size.h;
+    var scale = (Math.min(w, h) / span) * 1.7;
+    var cx = w / 2, cy = h / 2 + h * 0.05;
+    var cosA = Math.cos(angle), sinA = Math.sin(angle);
+
+    ctx.clearRect(0, 0, w, h);
+
+    for (var b = 0; b < bandCount; b++) {
+      var start = b * bandSize;
+      var end = Math.min(start + bandSize + 1, points.length); // +1 so bands connect with no gap
+      if (start >= points.length) break;
+      ctx.beginPath();
+      for (var i = start; i < end; i++) {
+        var p = points[i];
+        var rx = p[0] * cosA - p[2] * sinA;
+        var sx = cx + rx * scale;
+        var sy = cy - p[1] * scale;
+        if (i === start) ctx.moveTo(sx, sy);
+        else ctx.lineTo(sx, sy);
+      }
+      ctx.strokeStyle = bandColors[b];
+      ctx.lineWidth = 1.1;
+      ctx.globalAlpha = 0.85;
+      ctx.stroke();
+    }
+  }
+
+  draw();
+
+  if (!reduceMotion) {
+    (function animate() {
+      angle += 0.0022;
+      draw();
+      requestAnimationFrame(animate);
+    })();
+  }
+
+  window.addEventListener("resize", function () {
+    size = resize();
+    draw();
+  });
+})();
+</script>
