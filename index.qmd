@@ -37,8 +37,8 @@ Time-to-event / survival analysis · Frailty models · Spatial and Bayesian spat
 
 **Doctor of Public Health (DrPH), Biostatistics** — University of Alabama at Birmingham *(expected December 2026)*  
 Dissertation: *Shared Frailty Models for Spatial Data, with Application to Time to HIV Viral Suppression*  
-Committee Chair: Dr. Jeff M. Szychowski  
-Committee Members: Dr. Dustin M. Long, Dr. Emily Levitan, Dr. Aadia Rana, Dr. D. Scott Batey, Dr. David T. Redden, Dr. Stacey S. Cofield
+Committee Chair: [Dr. Jeff M. Szychowski](https://scholars.uab.edu/1935-jeff-szychowski){target="_blank"}  
+Committee Members: [Dr. Dustin M. Long](https://school.wakehealth.edu/faculty/l/dustin-marsh-long){target="_blank"}, [Dr. Emily Levitan](https://scholars.uab.edu/1983-emily-levitan){target="_blank"}, [Dr. Aadia Rana](https://scholars.uab.edu/4937-aadia-rana){target="_blank"}, [Dr. D. Scott Batey](https://tssw.tulane.edu/faculty-research/faculty-staff-profile/scott-batey-phd-msw){target="_blank"}, [Dr. David T. Redden](https://scholars.uab.edu/1934-david-redden){target="_blank"}, [Dr. Stacey S. Cofield](https://scholars.uab.edu/1924-stacey-cofield){target="_blank"}
 
 **Master of Science (MS), Biostatistics** — West Virginia University, May 2017
 
