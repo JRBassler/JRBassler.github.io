@@ -26,7 +26,7 @@ page-layout: article
 
 As an experienced statistician, I've honed my skills in higher education, contributing to research and analytical initiatives. I apply advanced spatial and survival statistical methods to public health challenges, with a focus on HIV care outcomes across Alabama and the Deep South.
 
-I currently serve as Clinical Database Manager II with the UAB Center for AIDS Research (CFAR), and I recently defended my dissertation for my Doctor of Public Health (DrPH) in Biostatistics at UAB, focusing on shared frailty models for spatial data applied to time to HIV viral suppression. I am completing my Doctor of Public Health (DrPH) in Biostatistics at UAB, with a dissertation on shared frailty models for spatial data applied to time to HIV viral suppression. My work sits at the intersection of survival analysis, spatial and Bayesian statistical methods, and structural determinants of HIV care outcomes — including a [study on historical redlining and delays in HIV treatment](https://doi.org/10.1001/jamainternmed.2024.5003) that has been covered in the [national press](press.qmd).
+I currently serve as Clinical Database Manager II with the UAB Center for AIDS Research (CFAR), and I recently defended my dissertation for my Doctor of Public Health (DrPH) in Biostatistics at UAB, focusing on shared frailty models for spatial data applied to time to HIV viral suppression. My work sits at the intersection of survival analysis, spatial and Bayesian statistical methods, and structural determinants of HIV care outcomes — including a [study on historical redlining and delays in HIV treatment](https://doi.org/10.1001/jamainternmed.2024.5003) that has been covered in the [national press](press.qmd).
 :::
 
 ## Research interests
