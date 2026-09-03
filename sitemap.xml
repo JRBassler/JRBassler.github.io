@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.johnrbassler.com/press.html</loc>
-    <lastmod>2026-09-01T21:10:40.623Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.johnrbassler.com/teaching.html</loc>
-    <lastmod>2026-09-01T21:10:40.624Z</lastmod>
-  </url>
-  <url>
     <loc>https://www.johnrbassler.com/cv.html</loc>
-    <lastmod>2026-09-01T21:10:40.483Z</lastmod>
+    <lastmod>2026-09-03T16:50:07.642Z</lastmod>
   </url>
   <url>
     <loc>https://www.johnrbassler.com/talks.html</loc>
-    <lastmod>2026-09-01T21:10:40.624Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.johnrbassler.com/shiny-apps.html</loc>
-    <lastmod>2026-09-01T21:10:40.624Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.johnrbassler.com/index.html</loc>
-    <lastmod>2026-09-01T21:10:40.623Z</lastmod>
+    <lastmod>2026-09-03T16:50:07.769Z</lastmod>
   </url>
   <url>
     <loc>https://www.johnrbassler.com/publications.html</loc>
-    <lastmod>2026-09-01T21:10:40.624Z</lastmod>
+    <lastmod>2026-09-03T16:50:07.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnrbassler.com/index.html</loc>
+    <lastmod>2026-09-03T16:50:07.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnrbassler.com/press.html</loc>
+    <lastmod>2026-09-03T16:50:07.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnrbassler.com/teaching.html</loc>
+    <lastmod>2026-09-03T16:50:07.769Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.johnrbassler.com/shiny-apps.html</loc>
+    <lastmod>2026-09-03T16:50:07.768Z</lastmod>
   </url>
 </urlset>
